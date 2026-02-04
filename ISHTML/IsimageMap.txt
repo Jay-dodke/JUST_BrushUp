@@ -1,0 +1,28 @@
+HTML Image Maps
+
+What it is
+- An image map lets you define clickable areas on one image.
+- Use `<img usemap="#name">` to connect the image to a `<map name="name">`.
+- Inside `<map>`, add one or more `<area>` elements to define shapes and links.
+
+Basic example
+```
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+```
+
+Shapes
+- `rect` = rectangle (x1, y1, x2, y2)
+- `circle` = circle (center-x, center-y, radius)
+- `poly` = polygon (x1, y1, x2, y2, ...)
+- `default` = whole image
+
+Best practice
+- Always include `alt` text on `<area>` links.
+- Make sure `usemap` matches the `<map name>` (including the `#`).
+- Use clear, meaningful link targets.
