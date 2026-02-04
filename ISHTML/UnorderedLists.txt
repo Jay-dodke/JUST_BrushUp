@@ -1,0 +1,44 @@
+HTML Unordered Lists
+
+What it is
+- The `<ul>` tag creates an unordered (bulleted) list.
+- Each list item is inside an `<li>` tag.
+
+Basic example
+```
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+```
+
+List marker styles
+- Use CSS `list-style-type` to change bullets: `disc` (default), `circle`, `square`, or `none`.
+
+Example (circle)
+```
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+```
+
+Nested list
+```
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+```
+
+Best practice
+- Use unordered lists for items that have no specific order.
+- Keep list text short and clear.
