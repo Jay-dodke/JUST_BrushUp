@@ -1,0 +1,37 @@
+HTML Table Colgroup
+
+What it is
+- `<colgroup>` groups one or more columns so you can style them together.
+- Use `<col>` inside `<colgroup>` to define how many columns to style.
+
+Basic example
+```
+<table>
+  <colgroup>
+    <col span="2" style="background-color:#D6EEEE">
+  </colgroup>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+```
+
+Multiple columns
+```
+<table>
+  <colgroup>
+    <col span="1" style="background-color:#D6EEEE">
+    <col span="2" style="background-color:#FFF4A3">
+  </colgroup>
+  ...
+</table>
+```
+
+Best practice
+- Place `<colgroup>` right after the opening `<table>` tag.
+- Use colgroups for column styling instead of repeating styles on every cell.
