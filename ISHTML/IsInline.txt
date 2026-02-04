@@ -1,0 +1,17 @@
+HTML Inline Elements
+
+What it is
+- Inline elements do not start on a new line.
+- They only take up as much width as necessary.
+
+Common inline elements
+- `<span>` (generic inline container)
+- `<a>` (link)
+
+Basic example
+```
+<p>This is <span>inline text</span> inside a paragraph.</p>
+```
+
+Best practice
+- Use inline elements for small parts of text, links, or styling.
