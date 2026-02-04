@@ -1,0 +1,6 @@
+Attributes -> extra information about an element
+Written in the start tag after the element name
+Format -> name="value"
+Common examples -> href, src, alt, title, id, class, style
+Attributes are case-insensitive in HTML (use lowercase for consistency)
+Example -> <a href="https://www.google.com">Visit Google</a>
