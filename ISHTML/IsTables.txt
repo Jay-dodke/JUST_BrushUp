@@ -1,0 +1,38 @@
+HTML Tables
+
+What it is
+- Tables are used to display data in rows and columns.
+- Core tags: `<table>`, `<tr>` (row), `<th>` (header cell), `<td>` (data cell).
+
+Basic example
+```
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+</table>
+```
+
+Caption
+- Use `<caption>` to describe the table.
+- Place it right after the opening `<table>` tag.
+
+Borders (CSS)
+```
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+```
+
+Best practice
+- Use tables for data, not for page layout.

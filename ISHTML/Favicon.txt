@@ -1,0 +1,16 @@
+HTML Favicon
+
+What it is
+- A favicon is the small icon shown in the browser tab.
+- It is linked in the `<head>` using a `<link>` tag.
+
+Basic example
+```
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+```
+
+Where to put it
+- Inside the `<head>` section, after the `<title>` is common.
+
+Notes
+- The standard file name is `favicon.ico`, but other image types can work.
