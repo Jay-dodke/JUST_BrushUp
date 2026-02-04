@@ -1,0 +1,35 @@
+CSS Styles in HTML
+
+What it is
+- HTML can be styled with CSS.
+- CSS can be added in three ways: inline, internal, or external. 
+
+Inline CSS (quick for one element)
+```
+<p style="color: blue;">Blue text</p>
+```
+- Inline CSS uses the `style` attribute on an HTML element.
+
+Internal CSS (good for one page)
+```
+<head>
+  <style>
+    p { color: green; }
+  </style>
+</head>
+```
+- Internal CSS is placed inside a `<style>` element in the `<head>`.
+
+External CSS (best for many pages)
+```
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
+- External CSS links an outside `.css` file using a `<link>` element in the `<head>`.
+
+Best practice
+- Prefer external CSS for multi-page sites.
+- Use internal CSS for a single page.
+- Use inline CSS only for small, one-off changes.
+

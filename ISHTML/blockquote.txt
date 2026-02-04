@@ -1,0 +1,24 @@
+Blockquote element (HTML)
+
+What it is
+- `<blockquote>` is used for long, block-level quotations.
+- Browsers usually indent it to show the quoted passage is separate from your own text.
+
+Basic example
+```
+<blockquote>
+  This is an example of a blockquote element. It is used to show a long quotation.
+</blockquote>
+```
+
+Best practice
+- Use `<cite>` for the source when you have one.
+- Don’t use `<blockquote>` just for indentation; use CSS for styling instead.
+
+Example with source
+```
+<blockquote>
+  “The important thing is not to stop questioning.”
+  <cite>— Albert Einstein</cite>
+</blockquote>
+```
