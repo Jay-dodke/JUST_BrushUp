@@ -1,0 +1,38 @@
+HTML Table Headers
+
+What it is
+- Table headers use the `<th>` tag.
+- `<th>` cells are bold and centered by default.
+- Use headers to label columns or rows.
+
+Basic example
+```
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Asha</td>
+    <td>21</td>
+  </tr>
+</table>
+```
+
+Header for a row
+```
+<table>
+  <tr>
+    <th>Month</th>
+    <td>January</td>
+  </tr>
+  <tr>
+    <th>Sales</th>
+    <td>$1000</td>
+  </tr>
+</table>
+```
+
+Best practice
+- Use `<th>` for headers, not `<td>`.
+- You can style headers with CSS for clarity.

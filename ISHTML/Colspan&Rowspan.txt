@@ -1,0 +1,42 @@
+HTML Table Colspan & Rowspan
+
+What it is
+- `colspan` makes a cell span multiple columns.
+- `rowspan` makes a cell span multiple rows.
+- These attributes go on `<th>` or `<td>`.
+
+Colspan example
+```
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Asha</td>
+    <td>Patil</td>
+    <td>21</td>
+  </tr>
+</table>
+```
+
+Rowspan example
+```
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Asha</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>123-4567</td>
+  </tr>
+  <tr>
+    <td>987-6543</td>
+  </tr>
+</table>
+```
+
+Best practice
+- Use spans only when the data structure truly requires it.
+- Keep tables readable; avoid complex spans if a simpler layout works.

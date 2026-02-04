@@ -1,0 +1,33 @@
+HTML Table Borders
+
+What it is
+- Table borders are controlled with CSS.
+- You can add borders to `table`, `th`, and `td`.
+
+Basic border example
+```
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+```
+
+Padding and spacing
+```
+<style>
+  th, td { padding: 6px 10px; }
+</style>
+```
+
+Border styles
+```
+<style>
+  table, th, td { border: 2px dashed #333; }
+</style>
+```
+
+Best practice
+- Use `border-collapse: collapse;` for a cleaner look.
+- Keep padding for readability.

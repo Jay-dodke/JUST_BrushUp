@@ -1,0 +1,38 @@
+HTML Table Body (`<tbody>`)
+
+What it is
+- `<tbody>` groups the main body rows of a table.
+- It sits inside `<table>` along with optional `<thead>` and `<tfoot>`.
+- It helps browsers and CSS target sections of the table.
+
+Basic example
+```
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple</td>
+      <td>$1</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>$2</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>$3</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+Best practice
+- Use `<thead>`, `<tbody>`, and `<tfoot>` for clarity and easier styling.
+- Keep header rows in `<thead>` and summary rows in `<tfoot>`.
