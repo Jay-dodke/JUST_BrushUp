@@ -1,0 +1,26 @@
+HTML Div Element
+
+What it is
+- `<div>` is a block-level container used to group elements.
+- It helps apply CSS styles or JavaScript to a section of content.
+
+Common attributes
+- `class` for reusable styling.
+- `id` for a unique element.
+
+Real-life example (product card)
+```
+<div class="card">
+  <div class="card-image">Image</div>
+  <div class="card-body">
+    <h2>Wireless Headphones</h2>
+    <p>Noise-canceling, 30-hour battery life.</p>
+    <p class="price">$79</p>
+    <button>Buy Now</button>
+  </div>
+</div>
+```
+
+Best practice
+- Use `<div>` to group content when no semantic tag fits.
+- Prefer semantic tags like `<header>`, `<nav>`, or `<section>` when appropriate.
