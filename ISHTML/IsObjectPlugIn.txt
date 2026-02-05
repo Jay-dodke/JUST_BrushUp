@@ -1,0 +1,27 @@
+HTML Object and Plug-ins
+
+What it is
+- The `<object>` element defines an embedded object within an HTML document.
+- It was designed to embed plug-ins (like Java applets, PDF readers, and Flash players).
+- It can also embed HTML or images.
+
+Basic example (embed HTML)
+```
+<object width="100%" height="500px" data="snippet.html"></object>
+```
+
+Embed image
+```
+<object data="audi.jpeg"></object>
+```
+
+Fallback text
+```
+<object data="missing-file.pdf">
+  Your browser does not support embedded objects.
+</object>
+```
+
+Notes
+- Most browsers no longer support Java applets and plug-ins, and Flash is disabled in modern browsers.
+- Use `<iframe>` to embed HTML and `<img>` to embed images when possible.

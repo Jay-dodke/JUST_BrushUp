@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Object and Plug-ins</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 16px;
+      }
+      .box {
+        border: 1px solid #333;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      code {
+        background: #f2f2f2;
+        padding: 2px 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Object and Plug-ins</h1>
+
+    <div class="box">
+      <h2>Embed HTML</h2>
+      <p><code>&lt;object data="snippet.html"&gt;</code></p>
+      <object width="100%" height="200" data="snippet.html"></object>
+    </div>
+
+    <div class="box">
+      <h2>Embed Image</h2>
+      <p><code>&lt;object data="audi.jpeg"&gt;</code></p>
+      <object data="audi.jpeg" width="300" height="200"></object>
+    </div>
+
+    <div class="box">
+      <h2>Fallback Text</h2>
+      <object data="missing-file.pdf" width="300" height="200">
+        Your browser does not support embedded objects.
+      </object>
+    </div>
+  </body>
+</html>

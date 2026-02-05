@@ -4,7 +4,7 @@ What it is
 - The `<audio>` element is used to play sound content on a web page.
 - Use multiple `<source>` elements so the browser can choose a supported format.
 
-Basic example
+Basic 
 ```
 <audio controls>
   <source src="horse.ogg" type="audio/ogg">
