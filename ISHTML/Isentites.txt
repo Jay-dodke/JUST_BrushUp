@@ -1,0 +1,25 @@
+HTML Entities
+
+What it is
+- Some characters are reserved in HTML and must be written as entities.
+- An entity starts with `&` and ends with `;`.
+- You can use a named entity or a numeric entity.
+
+Common entities
+- `&lt;` or `&#60;` for `<`
+- `&gt;` or `&#62;` for `>`
+- `&amp;` or `&#38;` for `&`
+- `&quot;` or `&#34;` for `"`
+- `&apos;` or `&#39;` for `'`
+- `&copy;` or `&#169;` for `©`
+- `&reg;` or `&#174;` for `®`
+- `&euro;` or `&#8364;` for `€`
+
+Example
+```
+<p>5 &lt; 10 and 10 &gt; 5</p>
+```
+
+Notes
+- Use entities to show reserved symbols or special characters.
+- If you use the numeric form, add `#` after the `&`.
