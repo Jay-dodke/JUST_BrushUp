@@ -1,0 +1,34 @@
+HTML Video
+
+What it is
+- The `<video>` element is used to show video content on a web page.
+- Use one or more `<source>` elements so the browser can choose a supported format.
+- The text inside `<video>` appears if the browser does not support the tag.
+
+Basic example
+```
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+```
+
+Autoplay (muted)
+```
+<video width="320" height="240" controls autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+```
+
+Poster image
+```
+<video controls poster="/images/w3html5.gif">
+  <source src="movie.mp4" type="video/mp4">
+</video>
+```
+
+Notes
+- Use `controls` to show play, pause, and volume.
+- Include `width` and `height` to avoid layout shift.
+- Common formats: MP4, WebM, Ogg.
