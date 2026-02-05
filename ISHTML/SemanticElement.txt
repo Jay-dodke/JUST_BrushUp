@@ -1,0 +1,45 @@
+HTML Semantic Elements
+
+What it is
+- Semantic elements clearly describe their meaning to both the browser and the developer.
+- They make the page structure easier to read and improve accessibility.
+
+Common semantic elements
+- `<header>` - top area or page title
+- `<nav>` - navigation links
+- `<section>` - grouped content
+- `<article>` - self-contained content
+- `<aside>` - related content (sidebar or note)
+- `<main>` - main content of the page
+- `<footer>` - bottom area
+
+Simple example
+```
+<header>
+  <h1>My Website</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <section>
+    <article>
+      <h2>Title</h2>
+      <p>Content here...</p>
+    </article>
+  </section>
+  <aside>Related info</aside>
+</main>
+
+<footer>
+  <p>Footer area</p>
+</footer>
+```
+
+Notes
+- Semantic tags replace generic `<div>` elements when the meaning is clear.
+- They help search engines and assistive technologies understand the page.

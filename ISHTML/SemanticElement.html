@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Semantic Elements</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      header {
+        background: #2b3a67;
+        color: white;
+        padding: 16px;
+        text-align: center;
+      }
+      nav {
+        background: #f1f1f1;
+        padding: 10px;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 12px;
+      }
+      main {
+        padding: 16px;
+      }
+      section {
+        margin-bottom: 16px;
+        padding: 12px;
+        border: 1px solid #333;
+      }
+      aside {
+        background: #fafafa;
+        border-left: 4px solid #333;
+        padding: 12px;
+        margin: 16px 0;
+      }
+      footer {
+        background: #2b3a67;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Semantic Elements</h1>
+      <p>Elements that describe their meaning</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Article</h2>
+        <article>
+          <p>
+            This is an <strong>article</strong> inside a section. It represents a
+            self-contained piece of content.
+          </p>
+        </article>
+      </section>
+
+      <aside>
+        <h3>Aside</h3>
+        <p>This is related content, like a note or sidebar.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Footer area</p>
+    </footer>
+  </body>
+</html>
