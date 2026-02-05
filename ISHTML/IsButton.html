@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Buttons example</title>
+    <style>
+      .btn {
+        background-color: #2e7d32;
+        color: white;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Buttons</h1>
+
+    <button>Click Me</button>
+
+    <h2>Styled Button</h2>
+    <button class="btn">Green Button</button>
+
+    <h2>Disabled Button</h2>
+    <button class="btn" disabled>Disabled Button</button>
+
+    <h2>Button with JavaScript</h2>
+    <button onclick="alert('Hello!')">Click Me</button>
+
+    <h2>Button Types (Form)</h2>
+    <form>
+      First name: <input type="text" name="fname">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset Form</button>
+      <button type="button">Normal Button</button>
+    </form>
+  </body>
+</html>
