@@ -1,0 +1,39 @@
+HTML Input Types
+
+What it is
+- The `<input>` element supports many `type` values.
+- Each type changes the input behavior and keyboard on devices.
+
+Common input types
+- `text` - single-line text input
+- `password` - masked text
+- `email` - email format
+- `date` - date picker
+- `color` - color picker
+- `number` - numeric input
+- `range` - slider
+- `file` - file upload
+- `radio` - single choice in a group
+- `checkbox` - multiple choices
+- `search` - search field
+- `submit` / `reset` - form buttons
+
+Best example
+```
+<form action="/action_page.php">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd">
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date">
+
+  <input type="submit" value="Submit">
+</form>
+```
+
+Notes
+- If you omit the `type`, it defaults to `text`.
+- Use the right type for better validation and mobile keyboards.
