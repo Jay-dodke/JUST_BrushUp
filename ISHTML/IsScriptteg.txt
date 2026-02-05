@@ -5,7 +5,7 @@ What it is
 - A `<script>` element can contain code or use the `src` attribute to link an external script file.
 - JavaScript is used for dynamic and interactive behavior.
 
-Basic example
+example
 ```
 <script>
   document.getElementById("demo").innerHTML = "Hello JavaScript!";

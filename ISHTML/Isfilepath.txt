@@ -1,0 +1,37 @@
+HTML File Paths
+
+What it is
+- A file path describes where a file is located.
+- HTML uses file paths for images, links, scripts, and stylesheets.
+
+Best examples (most common cases)
+
+Same folder
+```
+<img src="picture.jpg" alt="My image">
+```
+
+Inside a folder
+```
+<img src="images/picture.jpg" alt="My image">
+```
+
+Parent folder
+```
+<img src="../picture.jpg" alt="My image">
+```
+
+Root folder (site root)
+```
+<img src="/images/picture.jpg" alt="My image">
+```
+
+Absolute URL
+```
+<img src="https://www.w3schools.com/images/img_girl.jpg" alt="W3Schools example">
+```
+
+Notes
+- Use relative paths when linking to files in your own project.
+- Use absolute URLs when linking to external resources.
+- `../` means go up one folder level.
