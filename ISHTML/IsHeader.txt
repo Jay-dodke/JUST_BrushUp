@@ -1,0 +1,33 @@
+HTML Head
+
+What it is
+- The `<head>` element is a container for metadata and resources.
+- Content inside `<head>` is not displayed on the page.
+
+Common elements inside `<head>`
+- `<title>` - sets the browser tab title
+- `<meta charset>` - sets character encoding
+- `<meta name="viewport">` - helps responsive design
+- `<meta name="description">` - page description
+- `<link>` - external stylesheets
+- `<style>` - internal CSS
+- `<script>` - JavaScript
+
+Example
+```
+<head>
+  <title>My Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learning HTML head element">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; }
+  </style>
+  <script src="app.js"></script>
+</head>
+```
+
+Notes
+- The `<title>` tag is required in every HTML document.
+- Metadata is used by browsers, search engines, and social media.
