@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Drag and Drop API</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 16px;
+      }
+      #div1 {
+        width: 200px;
+        height: 120px;
+        padding: 10px;
+        border: 2px dashed #333;
+        margin-top: 10px;
+      }
+      #drag1 {
+        width: 180px;
+        height: 100px;
+        border: 1px solid #999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Drag and Drop API</h1>
+
+    <p>Drag the image into the box.</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br />
+    <img
+      id="drag1"
+      src="/ISHTML/assests/meme-gif-pfp-4.gif"
+      draggable="true"
+      ondragstart="drag(event)"
+      alt="W3Schools Logo" />
+
+    <script>
+      function allowDrop(event) {
+        event.preventDefault();
+      }
+
+      function drag(event) {
+        event.dataTransfer.setData("text", event.target.id);
+      }
+
+      function drop(event) {
+        event.preventDefault();
+        const data = event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </body>
+</html>
