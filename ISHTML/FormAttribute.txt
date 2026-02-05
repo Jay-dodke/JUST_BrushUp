@@ -1,0 +1,37 @@
+HTML Form Attributes
+
+What it is
+- Form attributes control how and where form data is sent.
+- They are written on the `<form>` element.
+
+Common form attributes
+- `action` - URL to send form data when submitted
+- `method` - HTTP method: `get` or `post`
+- `target` - where to display the response (`_self`, `_blank`, etc.)
+- `autocomplete` - turn browser autocomplete on or off
+- `novalidate` - skip built-in form validation
+
+Best example
+```
+<form action="/action_page.php" method="post" target="_blank" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="John">
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="Doe">
+  <input type="submit" value="Submit">
+</form>
+```
+
+Novalidate example
+```
+<form action="/action_page.php" novalidate>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit" value="Submit (No Validation)">
+</form>
+```
+
+Notes
+- If `action` is omitted, the form submits to the current page.
+- If `method` is omitted, the default is `get`.
+- Use `post` for sensitive data.
