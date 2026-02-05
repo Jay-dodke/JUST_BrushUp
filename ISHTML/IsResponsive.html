@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Responsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 16px;
+      }
+      .columns {
+        display: flex;
+        gap: 12px;
+      }
+      .box {
+        flex: 1;
+        padding: 12px;
+        background: #f1f1f1;
+        border: 1px solid #333;
+      }
+      .responsive-img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media (max-width: 600px) {
+        .columns {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Responsive Web Design</h1>
+    <p>Resize the browser window to see the layout change.</p>
+
+    <div class="columns">
+      <div class="box">Left</div>
+      <div class="box">Main</div>
+      <div class="box">Right</div>
+    </div>
+
+    <h2>Responsive Image</h2>
+    <img
+      class="responsive-img"
+      src="/ISHTML/assests/slava-jamm-hcHK7E4iusI-unsplash.jpg"
+      alt="Responsive image example" />
+  </body>
+</html>

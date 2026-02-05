@@ -1,0 +1,31 @@
+HTML Responsive Web Design
+
+What it is
+- Responsive web design makes pages look good on all devices (desktop, tablet, phone).
+- It uses HTML and CSS to resize, hide, shrink, or enlarge content automatically.
+
+ example (core parts)
+
+1) Viewport meta tag
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+2) Responsive image
+```
+<img src="img_girl.jpg" style="max-width:100%;height:auto;" alt="Example">
+```
+
+3) Media query
+```
+<style>
+  .left, .main, .right { width: 33.33%; float: left; }
+  @media screen and (max-width: 600px) {
+    .left, .main, .right { width: 100%; }
+  }
+</style>
+```
+
+Notes
+- The viewport tag tells the browser how to scale the page on different devices.
+- Media queries change styles based on screen size.
