@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Script Tag</title>
+    <script>
+      function changeText() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        document.getElementById("demo").style.color = "red";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>HTML Script Tag</h1>
+
+    <p id="demo">Click the button to change this text.</p>
+    <button onclick="changeText()">Try It</button>
+
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  </body>
+</html>
