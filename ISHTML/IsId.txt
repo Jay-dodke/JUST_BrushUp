@@ -1,0 +1,33 @@
+HTML Id
+
+What it is
+- The `id` attribute gives a unique name to one HTML element.
+- The value of `id` must be unique within the HTML document.
+- `id` is used by CSS and JavaScript to select a specific element.
+- CSS uses a hash (#) followed by the id name.
+
+Simple example
+```
+<h1 id="myHeader">My Header</h1>
+```
+
+Style by id
+```
+<style>
+  #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+</style>
+```
+
+Notes
+- Id names are case sensitive.
+- The id name must contain at least one character.
+- The id name cannot start with a number.
+- The id name must not contain whitespaces (spaces, tabs, etc.).
+
+Tips
+- Use `id` for unique elements; use `class` for reusable styles.

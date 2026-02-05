@@ -28,7 +28,7 @@ Multiple classes
 ```
 - Separate class names with a space.
 
-Friendly tips
+ tips
 - You can use `class` on any HTML element.
 - Class names are case sensitive.
 - Use classes to keep your styles reusable and clean.
