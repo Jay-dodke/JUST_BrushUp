@@ -1,0 +1,35 @@
+HTML Geolocation API
+
+What it is
+- The Geolocation API is used to get the geographical position of a user.
+- It is only available in secure contexts (HTTPS).
+- The user must allow permission to access location.
+
+Basic example
+```
+<button onclick="getLocation()">Get Location</button>
+
+<script>
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  console.log(position.coords.latitude, position.coords.longitude);
+}
+</script>
+```
+
+Error handling
+```
+navigator.geolocation.getCurrentPosition(showPosition, showError);
+```
+
+Notes
+- Geolocation works only if the user approves permission.
+- It may not work on non-HTTPS pages.
+- Accuracy depends on device and network.
