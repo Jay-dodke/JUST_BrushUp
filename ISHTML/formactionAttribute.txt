@@ -1,0 +1,54 @@
+HTML Input form* Attributes
+
+What it is
+- `form*` attributes belong to the `<input>` element and can override the `<form>` settings.
+
+Common form* attributes
+- `form` - connects an input to a form by id (even if the input is outside the form)
+- `formaction` - URL that processes the form when submitted (overrides form `action`)
+- `formenctype` - how form data is encoded for `method="post"`
+- `formmethod` - HTTP method (`get` or `post`) for that submit
+- `formtarget` - where to display the response (`_self`, `_blank`, etc.)
+- `formnovalidate` - skip validation for that submit button
+
+Best example
+```
+<form action="/action_page.php" method="get">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit" value="Submit">
+  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+  <input type="submit" formmethod="post" value="Submit using POST">
+  <input type="submit" formtarget="_blank" value="Submit in New Tab">
+</form>
+```
+
+Form attribute example
+```
+<form action="/action_page.php" id="form1">
+  <input type="text" id="fname" name="fname">
+</form>
+<input type="text" id="lname" name="lname" form="form1">
+```
+
+formenctype example
+```
+<form action="/action_page_binary.asp" method="post">
+  <input type="file" name="file">
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart">
+</form>
+```
+
+formnovalidate example
+```
+<form action="/action_page.php">
+  <input type="email" name="mail">
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate value="Submit without validation">
+</form>
+```
+
+Notes
+- `formaction`, `formenctype`, `formmethod`, `formtarget`, and `formnovalidate` work with `submit` (and some with `image`).
+- These attributes override the matching `<form>` attributes for that specific button.
