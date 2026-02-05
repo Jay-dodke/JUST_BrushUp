@@ -1,0 +1,30 @@
+HTML Iframes
+
+What it is
+- The `<iframe>` tag embeds another document within the current HTML document.
+- Always include a `title` attribute for accessibility.
+
+Syntax
+```
+<iframe src="url" title="description"></iframe>
+```
+
+Set size
+```
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+```
+
+Remove border
+```
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+```
+
+Use as a link target
+```
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+```
+
+Tips
+- `height` and `width` are in pixels by default.
+- Use CSS to control size and borders.
