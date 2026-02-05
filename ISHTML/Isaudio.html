@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Audio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 16px;
+      }
+      .box {
+        border: 1px solid #333;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      code {
+        background: #f2f2f2;
+        padding: 2px 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Audio</h1>
+
+    <div class="box">
+      <h2>Basic Audio</h2>
+      <audio controls>
+        <source src="horse.ogg" type="audio/ogg" />
+        <source src="horse.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="box">
+      <h2>Autoplay (Muted)</h2>
+      <audio controls autoplay muted>
+        <source src="horse.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="box">
+      <h2>Loop</h2>
+      <audio controls loop>
+        <source src="horse.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </body>
+</html>

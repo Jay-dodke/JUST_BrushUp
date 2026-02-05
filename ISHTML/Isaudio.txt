@@ -1,0 +1,32 @@
+HTML Audio
+
+What it is
+- The `<audio>` element is used to play sound content on a web page.
+- Use multiple `<source>` elements so the browser can choose a supported format.
+
+Basic example
+```
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+Autoplay (muted)
+```
+<audio controls autoplay muted>
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+```
+
+Loop
+```
+<audio controls loop>
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+```
+
+Notes
+- Use `controls` to show play/pause and volume.
+- Common formats: MP3, Ogg, WAV.
