@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 24px;
+  color: #333;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #2b4c7e;
+  margin: 0 0 12px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.panel {
+  margin: 18px 0;
+  padding: 14px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+}
+
+.sample {
+  background: #f7f9fc;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sans {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mono {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cursive {
+  font-family: "Brush Script MT", cursive;
+}
+
+.fantasy {
+  font-family: "Papyrus", fantasy;
+}
+
+.stack {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.note {
+  text-align: center;
+  margin: 0;
+}
