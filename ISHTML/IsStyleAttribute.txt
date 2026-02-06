@@ -1,6 +1,0 @@
-style attribute -> used to add inline CSS to an element
-Written inside the start tag: style="property:value;"
-Use semicolons to separate multiple properties
-Common properties -> color, background-color, font-size, text-align, font-family
-Best practice -> prefer external or internal CSS for large projects
-Example -> <h1 style="color:blue; text-align:center;">Heading</h1>

@@ -1,6 +1,0 @@
- h1 -> is define for large 
- h2 -> is define for semi large 
- h3 -> is define for small bold 
- h4 -> is define for very small
- h5 -> is define for very less bold 
- h6 -> leatest bold
