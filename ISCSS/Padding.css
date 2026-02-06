@@ -38,55 +38,45 @@ h2 {
   border-radius: 6px;
 }
 
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
 .box {
   background: #fff;
   border: 2px solid #4caf50;
-  padding: 10px;
   border-radius: 6px;
 }
 
-.margin-a {
-  margin-bottom: 40px;
+.pad-70 {
+  padding: 70px;
 }
 
-.margin-b {
-  margin-top: 25px;
+.pad-individual {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
 
-.parent {
-  background: #fff;
-  margin: 16px 0;
+.pad-4 {
+  padding: 25px 50px 75px 100px;
 }
 
-.no-border {
-  padding: 0;
-  border: 0;
+.pad-3 {
+  padding: 25px 50px 75px;
 }
 
-.with-border {
-  border: 2px dashed #c44;
-  padding: 6px;
+.pad-2 {
+  padding: 25px 50px;
 }
 
-.child {
-  margin-top: 30px;
-  margin-bottom: 0;
-  padding: 6px;
-  border: 1px solid #c44;
-  background: #fff;
-}
-
-.empty-block {
-  margin: 20px 0;
-  height: 0;
-  border: 1px dashed #999;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
+.pad-1 {
+  padding: 25px;
 }
 
 .list {
   margin: 0;
   padding-left: 18px;
 }
-

@@ -1,0 +1,39 @@
+CSS Padding
+
+What padding does
+- Padding creates space inside an element, between the content and the border.
+- You can set padding on each side or use the shorthand padding property.
+
+Individual sides
+- padding-top, padding-right, padding-bottom, padding-left set each side.
+
+Valid values
+- length: a fixed size like px, pt, cm, etc.
+- %: a percentage of the containing block width.
+- inherit: take the padding from the parent.
+- Negative values are not allowed.
+
+Shorthand rules
+- Four values: top, right, bottom, left.
+- Three values: top, right/left, bottom.
+- Two values: top/bottom, right/left.
+- One value: all sides.
+
+Examples
+```
+.box {
+  padding: 70px;
+}
+
+.box {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.box { padding: 25px 50px 75px 100px; }
+.box { padding: 25px 50px 75px; }
+.box { padding: 25px 50px; }
+.box { padding: 25px; }
+```
