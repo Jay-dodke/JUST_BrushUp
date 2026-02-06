@@ -1,0 +1,36 @@
+CSS Min/Max Width and Height
+
+What they do
+- min-width / min-height set the smallest size an element can be.
+- max-width / max-height set the largest size an element can be.
+- min and max can override width/height when both are set.
+
+Common values
+- length: px, cm, etc.
+- %: percentage of the containing block.
+- none: removes a max constraint.
+
+Examples
+```
+.box {
+  width: 30%;
+  min-width: 200px;
+}
+
+.box {
+  width: 100%;
+  max-width: 500px;
+}
+
+.box {
+  min-height: 100px;
+}
+
+.box {
+  max-height: 120px;
+  overflow: auto;
+}
+```
+
+Tip
+- Use max-width with width: 100% to make boxes responsive on small screens.
