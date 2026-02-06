@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 24px;
+  color: #333;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #2b4c7e;
+  margin: 0 0 12px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.panel {
+  margin: 18px 0;
+  padding: 14px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+}
+
+.note {
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.demo-area {
+  background: #f7f9fc;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.box {
+  background: #fff;
+  border: 2px solid #4caf50;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.margin-70 {
+  margin: 70px;
+}
+
+.margins-individual {
+  margin-top: 100px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  margin-left: 80px;
+}
+
+.margins-4 {
+  margin: 25px 50px 75px 100px;
+}
+
+.margins-3 {
+  margin: 25px 50px 75px;
+}
+
+.margins-2 {
+  margin: 25px 50px;
+}
+
+.margins-1 {
+  margin: 25px;
+}
+
+.auto-box {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+  padding: 8px;
+  background: #fff;
+}
+
+.inherit-parent {
+  margin-left: 100px;
+  border: 1px dashed #c44;
+  padding: 8px;
+  background: #fff;
+}
+
+.inherit-child {
+  margin-left: inherit;
+  border: 1px solid #c44;
+  padding: 6px;
+  background: #fff;
+}

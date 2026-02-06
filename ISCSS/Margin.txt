@@ -1,0 +1,49 @@
+CSS Margins
+
+What margins do
+- Margins create space around elements, outside any defined borders.
+- You can set margins for each side or use the shorthand margin property.
+
+Individual sides
+- margin-top, margin-right, margin-bottom, margin-left control each side.
+
+Valid values
+- auto: the browser calculates the margin (often used to center blocks).
+- length: a fixed size like px, pt, or cm.
+- %: a percentage of the containing block width.
+- inherit: take the margin from the parent.
+- Negative values are allowed.
+
+Shorthand rules
+- Four values: top, right, bottom, left.
+- Three values: top, right/left, bottom.
+- Two values: top/bottom, right/left.
+- One value: all sides.
+
+Examples
+```
+.margin-example {
+  margin: 70px;
+}
+
+p {
+  margin-top: 100px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  margin-left: 80px;
+}
+
+p { margin: 25px 50px 75px 100px; }
+p { margin: 25px 50px 75px; }
+p { margin: 25px 50px; }
+p { margin: 25px; }
+
+.centered {
+  width: 300px;
+  margin: auto;
+}
+
+p.inherit {
+  margin-left: inherit;
+}
+```
