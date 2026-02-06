@@ -1,0 +1,30 @@
+CSS Box Model
+
+What it is
+- Every element is a rectangular box made of content, padding, border, and margin.
+- The total size includes the content size plus padding, border, and margin.
+
+
+
+Parts of the box model
+- Content: the text or image area.
+- Padding: space around the content.
+- Border: the line around the padding.
+- Margin: space outside the border.
+
+Example calculation
+- Content width: 320px
+- Padding: 10px left + 10px right
+- Border: 5px left + 5px right
+- Margin: 20px left + 20px right
+- Total width: 390px
+
+Example
+```
+.box {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid #4caf50;
+  margin: 20px;
+}
+```
