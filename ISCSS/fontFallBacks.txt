@@ -1,0 +1,31 @@
+CSS Font Fallbacks
+
+Overview
+- A font stack is a prioritized list of fonts.
+- The browser uses the first available font on the system.
+- Always finish with a generic family like serif, sans-serif, or monospace.
+
+Why it matters
+- Users have different fonts installed across devices.
+- Fallbacks maintain readability and consistent style.
+
+Popular stacks
+- Serif: "Times New Roman", Times, serif
+- Sans-serif: "Segoe UI", Tahoma, Arial, sans-serif
+- Monospace: "Consolas", "Courier New", monospace
+
+How to write a stack
+1. Preferred font first
+2. Similar fonts next
+3. Generic family last
+
+Professional example
+```
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Georgia", "Times New Roman", serif;
+}
+```

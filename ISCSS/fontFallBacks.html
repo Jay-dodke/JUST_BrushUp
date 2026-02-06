@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Font Fallbacks</title>
+    <link rel="stylesheet" href="fontFallBacks.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>CSS Font Fallbacks</h1>
+      <p>
+        A font stack lists preferred fonts first and ends with a generic family
+        so the browser can choose the best available option.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <h2>Why Fallbacks Matter</h2>
+        <p>
+          Not every device has the same fonts installed. A fallback stack ensures
+          readable text and a consistent feel, even when the primary font is
+          missing.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Serif Stack</h2>
+        <p class="sample serif">"Times New Roman", Times, serif</p>
+        <p class="note">
+          Serif fonts have small strokes at the ends of letters and feel
+          traditional.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Sans-Serif Stack</h2>
+        <p class="sample sans">"Segoe UI", Tahoma, Arial, sans-serif</p>
+        <p class="note">
+          Sans-serif fonts are clean and modern, ideal for screens.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Monospace Stack</h2>
+        <p class="sample mono">"Consolas", "Courier New", monospace</p>
+        <p class="note">
+          Monospace fonts align characters evenly and are common in code samples.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>How to Write a Stack</h2>
+        <ul class="list">
+          <li>List your preferred font first.</li>
+          <li>Add similar fonts as backups.</li>
+          <li>End with a generic family (serif, sans-serif, monospace).</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Professional Example</h2>
+        <pre class="code">body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Georgia", "Times New Roman", serif;
+}</pre>
+      </section>
+    </main>
+  </body>
+</html>
