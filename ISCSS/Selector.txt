@@ -1,0 +1,25 @@
+CSS Selectors
+
+What they do
+- CSS selectors are used to find (or select) the HTML elements you want to style.
+- CSS selectors can be grouped into five categories: simple, combinator, pseudo-class, pseudo-element, and attribute selectors.
+- This page focuses on the most basic selectors.
+
+Basic selectors covered
+- element selector targets elements by tag name (e.g., p).
+- id selector targets a single element by #id.
+- class selector targets all elements with a class via .class.
+- you can target only certain elements with a class (e.g., p.center).
+- elements can have more than one class (e.g., class="center large").
+
+Notes
+- An id name cannot start with a number.
+- A class name cannot start with a number.
+
+Example
+```
+p { ... }
+#para1 { ... }
+.center { ... }
+p.center { ... }
+```
