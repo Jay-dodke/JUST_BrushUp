@@ -4,8 +4,6 @@ What it is
 - Every element is a rectangular box made of content, padding, border, and margin.
 - The total size includes the content size plus padding, border, and margin.
 
-
-
 Parts of the box model
 - Content: the text or image area.
 - Padding: space around the content.
