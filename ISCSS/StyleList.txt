@@ -1,0 +1,36 @@
+CSS Lists
+
+Overview
+- Lists can be styled with list-style-type, list-style-position, and list-style-image.
+- list-style is the shorthand for type, position, and image.
+
+List-style-type
+- Common values: disc, circle, square, decimal, upper-roman, lower-alpha.
+
+List-style-position
+- outside: marker sits outside the content box (default).
+- inside: marker sits inside the content box.
+
+List-style-image
+- Use an image as the marker.
+- If the image fails, the list-style-type is used.
+
+Remove markers
+- Use list-style: none and reset padding for menus.
+
+Example
+```
+ul { list-style-type: square; }
+ul { list-style-position: inside; }
+ul { list-style-image: url("icon.svg"); }
+
+ul {
+  list-style: square inside;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+```
