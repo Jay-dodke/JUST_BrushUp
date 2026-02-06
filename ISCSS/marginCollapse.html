@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Margin Collapse</title>
+    <link rel="stylesheet" href="marginCollapse.css" />
+  </head>
+  <body>
+    <h1>CSS Margin Collapse</h1>
+    <p class="intro">
+      Vertical margins of block elements can combine into a single margin.
+    </p>
+
+    <section class="panel">
+      <h2>Adjacent Siblings</h2>
+      <p class="note">Two vertical margins collapse to the larger value.</p>
+      <div class="demo-area">
+        <div class="box margin-a">Box A (margin-bottom: 40px)</div>
+        <div class="box margin-b">Box B (margin-top: 25px)</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Parent and First/Last Child</h2>
+      <p class="note">
+        If the parent has no border/padding, the child`s top margin can collapse
+        with the parent.
+      </p>
+      <div class="demo-area">
+        <div class="parent no-border">
+          <p class="child">Child margin-top: 30px (collapses)</p>
+        </div>
+        <div class="parent with-border">
+          <p class="child">Child margin-top: 30px (no collapse)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Empty Blocks</h2>
+      <p class="note">
+        An empty elements top and bottom margins can collapse with adjacent
+        elements.
+      </p>
+      <div class="demo-area">
+        <div class="box">Box Above</div>
+        <div class="empty-block">(empty block)</div>
+        <div class="box">Box Below</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>How to Prevent Collapsing</h2>
+      <ul class="list">
+        <li>Add padding or a border to the parent.</li>
+        <li>Add inline content between elements.</li>
+        <li>Create a new block formatting context (e.g., overflow: auto).</li>
+      </ul>
+    </section>
+  </body>
+</html>
