@@ -1,3 +1,4 @@
 # IN 6 DAYS FULL-UP HTML CSS AND JAVASCRIPT
 
 sut/Sun off
+today off
