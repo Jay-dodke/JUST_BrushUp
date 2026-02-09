@@ -1,0 +1,18 @@
+CSS Inline-Block
+
+- inline elements sit on the same line but ignore width and height.
+- inline-block sits on the same line and respects width and height.
+- inline-block is useful for small cards, buttons, and menus.
+
+Why use inline-block
+- Build simple navigation or button groups.
+- Align small UI blocks in a row without flexbox.
+
+Real life example
+- A navigation menu where each link is a pill-shaped button.
+
+Simple example
+```
+.btn { display: inline-block; padding: 8px 14px; }
+.badge { display: inline-block; width: 80px; height: 30px; }
+```
