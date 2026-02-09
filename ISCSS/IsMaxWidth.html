@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Max-Width</title>
+    <link rel="stylesheet" href="IsMaxWidth.css" />
+  </head>
+  <body>
+    <h1>CSS Max-Width</h1>
+    <p class="intro">
+      Max-width keeps an element from growing too wide on large screens.
+    </p>
+
+    <section class="panel">
+      <h2>Fixed Width (width: 500px)</h2>
+      <p class="note">Always 500px, even on small screens.</p>
+      <div class="box fixed">width: 500px;</div>
+    </section>
+
+    <section class="panel">
+      <h2>Max-Width (max-width: 500px)</h2>
+      <p class="note">Shrinks on small screens, stops at 500px on big screens.</p>
+      <div class="box max">max-width: 500px; width: 100%;</div>
+    </section>
+
+    <section class="panel">
+      <h2>Max-Width + Center</h2>
+      <p class="note">Common layout pattern for readable content.</p>
+      <div class="box max center">max-width: 600px; margin: 0 auto;</div>
+    </section>
+  </body>
+</html>

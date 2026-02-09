@@ -1,6 +1,0 @@
-<p> -> defines a paragraph
-Paragraphs add spacing before and after by default
-Browsers ignore extra spaces and new lines inside <p>
-Use multiple <p> tags to separate blocks of text
-Best practice -> keep tag lowercase: <p> ... </p>
-Example -> <p>This is a simple paragraph.</p>

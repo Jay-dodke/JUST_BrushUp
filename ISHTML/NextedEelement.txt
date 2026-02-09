@@ -1,6 +1,0 @@
-Nested element -> element inside another element
-Parent element -> outer element that contains the inner one
-Child element -> inner element placed inside parent
-Always close the inner element before closing the parent
-Indentation -> use spaces for readability
-Example -> <p> This is <b>bold</b> text </p>

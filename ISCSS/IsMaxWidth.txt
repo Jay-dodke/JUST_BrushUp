@@ -1,0 +1,15 @@
+CSS Max-Width
+
+- width sets a fixed size.
+- max-width sets a limit, so the element can shrink on small screens.
+
+Why use max-width
+- Better for responsive layouts.
+- Keeps lines of text readable.
+
+Simple example
+```
+.fixed { width: 500px; }
+.max { width: 100%; max-width: 500px; }
+.center { max-width: 600px; margin: 0 auto; }
+```
