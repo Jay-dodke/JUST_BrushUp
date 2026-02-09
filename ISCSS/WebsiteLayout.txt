@@ -1,4 +1,4 @@
-CSS Website Layout
+Website Layout
 
 - a layout usually includes header, navigation, main content, sidebar, and footer.
 - use display: grid or flexbox to place main and sidebar areas.
