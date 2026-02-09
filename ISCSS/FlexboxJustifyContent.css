@@ -1,0 +1,68 @@
+﻿:root {
+  --bg: #f8f6f2;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --accent: #1d4ed8;
+  --item: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.page {
+  max-width: 920px;
+  margin: 32px auto 48px;
+  padding: 0 16px;
+}
+
+.intro h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.intro p {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.example {
+  margin: 18px 0 22px;
+}
+
+.example h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.flex-container {
+  display: flex;
+  background: var(--accent);
+  padding: 12px;
+  border-radius: 10px;
+  min-height: 72px;
+}
+
+.flex-container.start { justify-content: flex-start; }
+.flex-container.center { justify-content: center; }
+.flex-container.end { justify-content: flex-end; }
+.flex-container.between { justify-content: space-between; }
+.flex-container.around { justify-content: space-around; }
+.flex-container.evenly { justify-content: space-evenly; }
+
+.item {
+  background: var(--item);
+  padding: 12px 18px;
+  margin: 4px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}

@@ -1,0 +1,15 @@
+﻿12-Column CSS Grid
+
+- 12-column grids are common in web layouts.
+- use grid-template-columns: repeat(12, 1fr) to create equal columns.
+- items span multiple columns with grid-column: span N.
+
+Why use a 12-column grid
+- flexible combinations: 3+6+3, 4+4+4, 2+8+2, etc.
+- easier to build responsive layouts.
+
+Simple example
+```
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); }
+.span-4 { grid-column: span 4; }
+```

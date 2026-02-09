@@ -1,0 +1,16 @@
+Website Layout
+
+- a layout usually includes header, navigation, main content, sidebar, and footer.
+- use display: grid or flexbox to place main and sidebar areas.
+- keep content inside a max-width container for readability.
+
+Why use a layout
+- organize information clearly for users.
+- make pages responsive across devices.
+
+Simple example
+```
+.main { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+.container { max-width: 960px; margin: 0 auto; }
+@media (max-width: 760px) { .main { grid-template-columns: 1fr; } }
+```

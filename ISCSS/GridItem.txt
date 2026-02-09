@@ -1,0 +1,21 @@
+﻿Grid Items
+
+- grid items are direct children of a grid container.
+- place items with grid-column and grid-row or with named areas.
+- align items with justify-self (inline) and align-self (block).
+- change visual order with order.
+
+What this example shows
+- named areas with grid-template-areas and grid-area.
+- a promo item aligned with justify-self/align-self.
+- order used to move the promo item earlier in the visual layout.
+
+Simple example
+```
+.item {
+  grid-column: 1 / 3;
+  align-self: center;
+  justify-self: start;
+  order: -1;
+}
+```

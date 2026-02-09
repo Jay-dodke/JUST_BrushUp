@@ -1,0 +1,16 @@
+﻿Flexbox
+
+- flexbox is a one-dimensional layout model for rows or columns.
+- set the parent to display: flex or inline-flex.
+- direct children become flex items.
+- flexbox makes responsive alignment easier without floats or positioning.
+
+Why use flexbox
+- align items along a row or column with less CSS.
+- build responsive layouts that adapt to available space.
+
+Simple example
+```
+.container { display: flex; background-color: DodgerBlue; }
+.container div { background-color: #f1f1f1; margin: 10px; padding: 20px; font-size: 30px; }
+```
