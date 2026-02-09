@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opacity</title>
+    <link rel="stylesheet" href="IsOpacity.css" />
+  </head>
+  <body>
+    <h1>Opacity</h1>
+    <p class="intro">
+      Opacity controls how transparent an element is (0 = invisible, 1 = solid).
+    </p>
+
+    <section class="panel">
+      <h2>Basic Opacity</h2>
+      <p class="note">
+        Lower opacity makes the entire element (including text) transparent.
+      </p>
+      <div class="row">
+        <div class="box o-100">opacity: 1</div>
+        <div class="box o-70">opacity: 0.7</div>
+        <div class="box o-40">opacity: 0.4</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Image Hover Fade</h2>
+      <p class="note">
+        A common real-life use: image cards that fade on hover.
+      </p>
+      <div class="card">
+        <div class="photo">Product Image</div>
+        <div class="meta">
+          <h3>Leather Wallet</h3>
+          <p>Hover the image to see a smooth fade effect.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Opacity vs RGBA Background</h2>
+      <p class="note">Use RGBA to fade only the background, not the text.</p>
+      <div class="compare">
+        <div class="tile bg-opacity">Opacity on container (text fades too)</div>
+        <div class="tile bg-rgba">RGBA background (text stays solid)</div>
+      </div>
+    </section>
+  </body>
+</html>
