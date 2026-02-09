@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow</title>
+    <link rel="stylesheet" href="Overflow.css" />
+  </head>
+  <body>
+    <h1>CSS Overflow</h1>
+    <p class="intro">
+      The overflow property controls what happens when content is too big
+      for a box.
+    </p>
+
+    <section class="panel">
+      <h2>Overflow: hidden</h2>
+      <p class="note">Extra content is clipped.</p>
+      <div class="box hidden">
+        Hidden content. This text is longer than the box so it gets cut off.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Overflow: scroll</h2>
+      <p class="note">Scrollbars are always visible.</p>
+      <div class="box scroll">
+        Scroll inside this box to read more content. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Donec varius nisi a risus tincidunt, sed
+        luctus lorem facilisis.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Overflow: auto</h2>
+      <p class="note">Scrollbars appear only when needed.</p>
+      <div class="box auto">
+        Auto content. This text will overflow and show scrollbars only if
+        required by the content size.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Overflow-x and Overflow-y</h2>
+      <p class="note">
+        Control horizontal and vertical overflow separately.
+      </p>
+      <div class="box axis">
+        This box has a long line that forces horizontal scrolling:
+        super-long-line-super-long-line-super-long-line-super-long-line.
+      </div>
+    </section>
+  </body>
+</html>
