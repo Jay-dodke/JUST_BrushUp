@@ -35,7 +35,9 @@
     <section class="panel">
       <h2>Absolute (inside a relative parent)</h2>
       <p class="note">
-        Absolute elements are positioned inside the nearest positioned ancestor.
+        Absolute elements are positioned inside the nearest positioned ancestor
+        (non-static) and are removed from normal flow. If no positioned ancestor
+        exists, they use the document body.
       </p>
       <div class="relative-box">
         <span class="label">Relative parent</span>
@@ -44,8 +46,20 @@
     </section>
 
     <section class="panel">
+      <h2>Fixed (viewport)</h2>
+      <p class="note">
+        Fixed elements are positioned relative to the viewport, stay in place
+        on scroll, and do not leave a gap. Use top/right/bottom/left to place
+        them. See the fixed badge at bottom-right.
+      </p>
+    </section>
+
+    <section class="panel">
       <h2>Sticky (inside a scroll area)</h2>
-      <p class="note">Sticky elements stick to the top while scrolling.</p>
+      <p class="note">
+        Sticky elements act like relative until a scroll point, then stick.
+        You must set at least one offset (like top).
+      </p>
       <div class="sticky-demo">
         <div class="sticky-header">Sticky header</div>
         <div class="sticky-content">
