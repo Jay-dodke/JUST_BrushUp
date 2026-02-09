@@ -1,0 +1,16 @@
+CSS Z-Index
+
+- z-index controls the stacking order of positioned elements.
+- it works only on elements with position: relative/absolute/fixed/sticky.
+- higher z-index appears above lower z-index.
+
+Why use z-index
+- Layer UI elements like badges, modals, and tooltips.
+- Control overlaps in complex layouts.
+
+Simple example
+```
+.panel { position: relative; }
+.box-a { position: absolute; z-index: 1; }
+.box-b { position: absolute; z-index: 2; }
+```
