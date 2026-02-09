@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="Position.css" />
+  </head>
+  <body>
+    <h1>CSS Position</h1>
+    <p class="intro">
+      The position property controls how an element is placed in the layout.
+    </p>
+
+    <section class="panel">
+      <h2>Static (default)</h2>
+      <p class="note">Static elements follow normal flow and ignore offsets.</p>
+      <div class="row">
+        <div class="card static">Static box</div>
+        <div class="card">Normal box</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Relative</h2>
+      <p class="note">
+        Relative elements keep their space but can be nudged with offsets.
+      </p>
+      <div class="row">
+        <div class="card relative">Relative box</div>
+        <div class="card">Normal box</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Absolute (inside a relative parent)</h2>
+      <p class="note">
+        Absolute elements are positioned inside the nearest positioned ancestor.
+      </p>
+      <div class="relative-box">
+        <span class="label">Relative parent</span>
+        <div class="card absolute">Absolute box</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Sticky (inside a scroll area)</h2>
+      <p class="note">Sticky elements stick to the top while scrolling.</p>
+      <div class="sticky-demo">
+        <div class="sticky-header">Sticky header</div>
+        <div class="sticky-content">
+          <p>Scroll inside this panel to see the header stick.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+          <p>Donec posuere, justo ut aliquam porta, metus metus.</p>
+          <p>Curabitur commodo, magna at auctor sagittis, massa.</p>
+          <p>Sed sit amet tellus ipsum. Proin in suscipit dolor.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="fixed-badge">Fixed</div>
+  </body>
+</html>
