@@ -1,0 +1,17 @@
+CSS Math Functions
+
+- calc() performs calculations with different units.
+- min() picks the smallest value.
+- max() picks the largest value.
+- clamp(min, preferred, max) keeps values within a range.
+
+Why use math functions
+- Build fluid layouts and typography.
+- Keep sizes within safe limits across screens.
+
+Simple example
+```
+.box { width: calc(100% - 80px); }
+.panel { width: max(320px, 50%); }
+.title { font-size: clamp(20px, 4vw, 36px); }
+```
