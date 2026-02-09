@@ -1,8 +1,8 @@
 ﻿:root {
-  --bg: #f6f4ef;
+  --bg: #f8f6f2;
   --ink: #1f2937;
   --muted: #6b7280;
-  --accent: #2563eb;
+  --accent: #1d4ed8;
   --item: #ffffff;
 }
 
@@ -18,18 +18,18 @@ body {
 }
 
 .page {
-  max-width: 900px;
+  max-width: 920px;
   margin: 32px auto 48px;
   padding: 0 16px;
 }
 
-.hero h1 {
+.intro h1 {
   margin: 0 0 6px;
   font-size: 28px;
 }
 
-.hero p {
-  margin: 0 0 20px;
+.intro p {
+  margin: 0 0 18px;
   color: var(--muted);
 }
 

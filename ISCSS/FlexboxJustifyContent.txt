@@ -1,9 +1,9 @@
-﻿Flexbox Container: justify-content
+﻿Flexbox justify-content
 
-- justify-content aligns flex items on the main axis (usually horizontal).
+- justify-content aligns flex items along the main axis (usually horizontal).
 - it only has visible effect when items do not take all available space.
 
-Values shown
+Common values
 - flex-start: items at the start (default)
 - center: items in the middle
 - flex-end: items at the end
@@ -12,8 +12,8 @@ Values shown
 - space-evenly: equal space between and at the ends
 
 Why this example is good
-- shows all common justify-content values side by side.
-- same items and container size make differences obvious.
+- same container and same items make the difference easy to see.
+- includes all common values used in real layouts.
 
 Simple example
 ```
