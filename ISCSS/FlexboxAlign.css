@@ -1,0 +1,88 @@
+﻿:root {
+  --bg: #f5f5f7;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --accent: #0f766e;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.page {
+  max-width: 980px;
+  margin: 32px auto 56px;
+  padding: 0 16px;
+}
+
+.intro h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.intro p {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.example {
+  margin: 20px 0 26px;
+}
+
+.example h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.flex-container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: var(--accent);
+  border-radius: 12px;
+  min-height: 180px;
+}
+
+.flex-container.stretch { align-items: stretch; }
+.flex-container.center { align-items: center; }
+.flex-container.start { align-items: flex-start; }
+.flex-container.end { align-items: flex-end; }
+.flex-container.baseline { align-items: baseline; }
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 16px;
+  flex: 1 1 0;
+  min-width: 160px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0 0 6px;
+  color: var(--muted);
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.short { min-height: 90px; }
+.medium { min-height: 130px; }
+.tall { min-height: 170px; }
