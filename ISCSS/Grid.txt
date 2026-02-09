@@ -1,0 +1,28 @@
+﻿CSS Grid: Container, Tracks, Gap, Align
+
+- a grid container is created with display: grid or inline-grid.
+- tracks are defined by grid-template-columns and grid-template-rows.
+- gaps are the spaces between rows and columns (gap, row-gap, column-gap).
+- alignment of grid content uses justify-content and align-content when there is free space.
+
+Why this example is good
+- real card layout with images shows grid tracks and gaps clearly.
+- a featured card spans two columns to show track control.
+- justify-content and align-content are set on the container.
+
+Key parts (from W3Schools topics)
+- Grid container: display: grid.
+- Grid tracks: grid-template-columns / grid-template-rows.
+- Grid gap: gap (or row-gap, column-gap).
+- Grid align: justify-content and align-content.
+
+Simple example
+```
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+  align-content: start;
+}
+```
