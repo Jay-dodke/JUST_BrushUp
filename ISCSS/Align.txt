@@ -1,0 +1,18 @@
+CSS Align
+
+- text-align aligns inline content (left, center, right).
+- margin: 0 auto centers a fixed-width block element.
+- vertical-align aligns inline or table-cell elements.
+- flexbox can center both horizontally and vertically.
+
+Why use align
+- Improve layout readability and balance.
+- Center cards, buttons, or text quickly.
+
+Simple example
+```
+.title { text-align: center; }
+.card { width: 300px; margin: 0 auto; }
+.chip { vertical-align: middle; }
+.center { display: flex; align-items: center; justify-content: center; }
+```
