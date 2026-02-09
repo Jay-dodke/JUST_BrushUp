@@ -3,6 +3,7 @@ CSS Float
 - float moves an element to the left or right.
 - surrounding text wraps around the floated element.
 - float works on block-level elements and needs width for good results.
+- clear moves an element below floated items.
 
 Why use float
 - Place images inside text like in articles or blogs.
@@ -16,4 +17,5 @@ Simple example
 .photo { float: left; width: 120px; margin-right: 12px; }
 .badge { float: right; }
 .clearfix::after { content: ""; display: block; clear: both; }
+.divider { clear: both; }
 ```

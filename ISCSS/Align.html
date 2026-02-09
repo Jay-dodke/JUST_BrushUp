@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Align</title>
+    <link rel="stylesheet" href="Align.css" />
+  </head>
+  <body>
+    <h1>CSS Align</h1>
+    <p class="intro">
+      Alignment can be horizontal or vertical depending on layout type.
+    </p>
+
+    <section class="panel">
+      <h2>Horizontal Align: Text</h2>
+      <p class="note">Use text-align for inline content.</p>
+      <div class="box text-left">Left aligned text</div>
+      <div class="box text-center">Center aligned text</div>
+      <div class="box text-right">Right aligned text</div>
+    </section>
+
+    <section class="panel">
+      <h2>Horizontal Align: Block Element</h2>
+      <p class="note">Use margin: 0 auto to center a fixed-width block.</p>
+      <div class="block">Centered box</div>
+    </section>
+
+    <section class="panel">
+      <h2>Vertical Align: Inline</h2>
+      <p class="note">Use vertical-align for inline or table-cell elements.</p>
+      <div class="inline-demo">
+        <span class="chip">Text</span>
+        <span class="chip top">Top</span>
+        <span class="chip middle">Middle</span>
+        <span class="chip bottom">Bottom</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Vertical and Horizontal: Flexbox</h2>
+      <p class="note">Center items using flexbox.</p>
+      <div class="flex-center">
+        <div class="dot">Centered</div>
+      </div>
+    </section>
+  </body>
+</html>
