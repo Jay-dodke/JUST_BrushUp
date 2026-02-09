@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo-Elements</title>
+    <link rel="stylesheet" href="PseudoElements.css" />
+  </head>
+  <body>
+    <h1>CSS Pseudo-Elements</h1>
+    <p class="intro">
+      Pseudo-elements style specific parts of an element.
+    </p>
+
+    <section class="panel">
+      <h2>::first-line and ::first-letter</h2>
+      <p class="note">Great for magazine-style intros.</p>
+      <p class="lead">
+        A strong opening line draws attention. The first line and first letter
+        can be styled independently for a classic editorial look.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>::selection</h2>
+      <p class="note">Customize the highlight color when users select text.</p>
+      <p class="select-demo">
+        Select this sentence to see a custom highlight color.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>::before and ::after</h2>
+      <p class="note">Add decorative content without extra HTML.</p>
+      <div class="badge">Verified</div>
+      <blockquote class="quote">
+        Good design is as little design as possible.
+      </blockquote>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+Pseudo-Elements
+
+- pseudo-elements style specific parts of an element.
+- ::first-line and ::first-letter style the first line/letter of text.
+- ::selection styles the text selection highlight.
+- ::before and ::after insert decorative content.
+
+Why use pseudo-elements
+- Add visual polish without extra HTML.
+- Highlight text or create badges and quotes.
+
+Simple example
+```
+p::first-line { font-weight: bold; }
+p::first-letter { font-size: 32px; }
+span::before { content: "✔ "; }
+```
