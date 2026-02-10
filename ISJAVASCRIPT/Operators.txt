@@ -1,0 +1,14 @@
+﻿JavaScript Operators (summary based on W3Schools)
+
+1) Arithmetic operators
+Use +, -, *, /, %, **, ++, and -- to perform math.
+
+2) Assignment operators
+Use = to assign values, and +=, -=, *=, /= to update values quickly.
+
+3) Comparison operators
+Use == or === to compare values, and !=, !==, >, <, >=, <= to compare numbers or strings.
+
+4) Real life idea
+Operators combine to build real scenarios, like calculating totals, discounts,
+shipping, or checking thresholds.

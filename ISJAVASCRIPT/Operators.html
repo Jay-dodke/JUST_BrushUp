@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Operators</title>
+    <link rel="stylesheet" href="Operators.css" />
+    <script src="Operators.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <p class="kicker">JavaScript</p>
+      <h1>Operators: Arithmetic, Assignment, and Comparisons</h1>
+      <p class="lede">
+        Operators let JavaScript perform math, assign values, and compare data.
+        This page highlights the most common operator groups with quick demos.
+      </p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Arithmetic Operators</h2>
+        <p class="muted">Add, subtract, multiply, divide, and more.</p>
+        <pre><code>let total = 12 + 8;
+let discount = total - 5;
+let boxes = 3 * 4;
+let split = 24 / 3;
+let remainder = 10 % 3;</code></pre>
+        <button class="btn" id="math-demo-btn">Run arithmetic demo</button>
+        <p class="output" id="math-output">Waiting for action.</p>
+      </section>
+
+      <section class="card">
+        <h2>Assignment Operators</h2>
+        <p class="muted">Use =, +=, -=, *=, /= to update values.</p>
+        <pre><code>let points = 5;
+points += 3;
+points -= 2;</code></pre>
+        <button class="btn" id="assign-demo-btn">Run assignment demo</button>
+        <p class="output" id="assign-output">Waiting for action.</p>
+      </section>
+
+      <section class="card">
+        <h2>Comparison Operators</h2>
+        <p class="muted">Compare values with ==, ===, &gt;, &lt;, and more.</p>
+        <pre><code>5 == "5" // true
+5 === "5" // false
+7 &gt; 3 // true</code></pre>
+        <button class="btn" id="compare-demo-btn">Run comparison demo</button>
+        <p class="output" id="compare-output">Waiting for action.</p>
+      </section>
+
+      <section class="card">
+        <h2>Real Life Example: Delivery Fee</h2>
+        <p class="muted">Combine operators to calculate a delivery total.</p>
+        <pre><code>let subtotal = 28;
+const deliveryFee = 4;
+const freeDeliveryLimit = 30;
+let total = subtotal + deliveryFee;
+const freeDelivery = subtotal &gt;= freeDeliveryLimit;</code></pre>
+        <button class="btn" id="delivery-demo-btn">Check delivery total</button>
+        <p class="output" id="delivery-output">Waiting for action.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>JavaScript Operators lessons.</p>
+    </footer>
+  </body>
+</html>
