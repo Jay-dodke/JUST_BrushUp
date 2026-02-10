@@ -65,4 +65,4 @@ This branch contains all completed HTML topic files inside the **ISHTML** folder
 
 ---
 
-🚀 This branch is dedicated exclusively to HTML practice and structured topic-wise learning.
+This branch is dedicated exclusively to HTML practice and structured topic-wise learning.
