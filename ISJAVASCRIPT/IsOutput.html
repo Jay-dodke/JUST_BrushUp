@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Output</title>
+    <link rel="stylesheet" href="IsOutput.css" />
+    <script src="IsOutput.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <p class="kicker">JavaScript</p>
+      <h1>JavaScript Output</h1>
+      <p class="lede">
+        JavaScript can display data in multiple ways, from updating HTML elements
+        to logging in the console. This page recreates the core output methods
+        with safe, interactive demos.
+      </p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Display Possibilities</h2>
+        <ul class="clean-list">
+          <li>Write into an HTML element with <code>innerHTML</code> or <code>innerText</code>.</li>
+          <li>Write into the document with <code>document.write()</code> (testing only).</li>
+          <li>Show an alert with <code>window.alert()</code>.</li>
+          <li>Log output with <code>console.log()</code>.</li>
+        </ul>
+        <p class="note">Changing <code>innerHTML</code> is the most common way to display data in HTML.</p>
+      </section>
+
+      <section class="card">
+        <h2>Write to an HTML Element</h2>
+        <p class="muted">Use <code>innerHTML</code> for markup and <code>innerText</code> for plain text.</p>
+        <div class="demo-block">
+          <button class="btn" id="html-demo-btn">Try innerHTML</button>
+          <div id="html-output" class="output"></div>
+        </div>
+        <div class="demo-block">
+          <button class="btn" id="text-demo-btn">Try innerText</button>
+          <div id="text-output" class="output"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>document.write()</h2>
+        <p class="muted">
+          <code>document.write()</code> is handy for quick testing, but running it after the
+          page loads will replace the document.
+        </p>
+        <pre><code>document.write(5 + 6);</code></pre>
+        <button class="btn" id="write-demo-btn">Open write demo</button>
+        <p class="note">This opens a small window so the current page stays intact.</p>
+      </section>
+
+      <section class="card">
+        <h2>window.alert()</h2>
+        <p class="muted">Alerts are immediate but interrupt the user flow.</p>
+        <pre><code>alert(5 + 6);</code></pre>
+        <button class="btn" id="alert-demo-btn">Show alert</button>
+      </section>
+
+      <section class="card">
+        <h2>console.log()</h2>
+        <p class="muted">Use the browser console for debugging output.</p>
+        <pre><code>console.log(5 + 6);</code></pre>
+        <button class="btn" id="console-demo-btn">Log to console</button>
+        <p class="status" id="console-status">Console is idle.</p>
+      </section>
+
+      <section class="card">
+        <h2>Print the Page</h2>
+        <p class="muted">
+          JavaScript cannot access printers directly, but <code>window.print()</code>
+          prints the current window.
+        </p>
+        <button class="btn" id="print-demo-btn">Print this page</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Based on the JavaScript Output</p>
+    </footer>
+  </body>
+</html>
