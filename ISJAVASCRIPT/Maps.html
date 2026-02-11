@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Maps</title>
+    <link rel="stylesheet" href="Maps.css" />
+    <script src="Maps.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>JavaScript Maps</h1>
+        <p>
+          Learn how <code>Map</code> stores key-value pairs with any data type
+          as keys.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>What is a Map?</h2>
+        <p>
+          A <code>Map</code> is a collection of key-value pairs. Unlike plain
+          objects, Map keys can be strings, numbers, booleans, or even objects.
+          Maps also remember insertion order.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Common Methods</h2>
+        <pre><code>
+const studentMarks = new Map();
+studentMarks.set("Asha", 90);
+studentMarks.set("Ravi", 84);
+studentMarks.set("Asha", 95); // updates existing key
+
+const ashaMarks = studentMarks.get("Asha");
+const hasRavi = studentMarks.has("Ravi");
+studentMarks.delete("Ravi");
+const total = studentMarks.size;
+        </code></pre>
+        <div class="actions">
+          <button id="run-methods-btn" type="button">Run methods example</button>
+          <p id="methods-output" class="output">Click the button.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Iteration Example</h2>
+        <pre><code>
+const prices = new Map([
+  ["Pen", 10],
+  ["Book", 40],
+  ["Bag", 350]
+]);
+
+let line = "";
+for (const [item, price] of prices) {
+  line += `${item}:${price} `;
+}
+        </code></pre>
+        <div class="actions">
+          <button id="run-iteration-btn" type="button">Run iteration example</button>
+          <p id="iteration-output" class="output">Click the button.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Object Key Example</h2>
+        <pre><code>
+const attendance = new Map();
+const student1 = { id: 1, name: "Asha" };
+const student2 = { id: 2, name: "Ravi" };
+
+attendance.set(student1, "Present");
+attendance.set(student2, "Absent");
+
+attendance.get(student1); // Present
+        </code></pre>
+        <div class="actions">
+          <button id="run-object-btn" type="button">Run object-key example</button>
+          <p id="object-output" class="output">Click the button.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

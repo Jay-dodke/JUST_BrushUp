@@ -1,0 +1,23 @@
+What:
+Map is a built-in JavaScript object for storing key-value pairs.
+
+Details:
+1. Keys in Map can be any type (string, number, object, function, etc.).
+2. Map keeps insertion order when you iterate.
+3. Common methods:
+   - set(key, value): add/update
+   - get(key): read value
+   - has(key): check key
+   - delete(key): remove key
+   - clear(): remove all pairs
+   - size: number of pairs
+4. A key is unique. Setting the same key again updates value.
+5. Object keys in Map are matched by reference, not by structure.
+
+Examples:
+1. Store student marks with string keys.
+2. Loop product prices with for...of.
+3. Use objects as keys to keep metadata tied to specific object instances.
+
+Best use:
+Use Map when you need non-string keys, predictable iteration order, or frequent add/remove operations on key-value data.
