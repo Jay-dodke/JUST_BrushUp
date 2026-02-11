@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Sort</title>
+    <link rel="stylesheet" href="ArraySort.css" />
+    <script src="ArraySort.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <span class="badge">Learn Only</span>
+        <h1>JavaScript Array Sort</h1>
+        <p>Sort test scores from lowest to highest and highest to lowest.</p>
+      </header>
+
+      <section class="card">
+        <h2>Friendly Example</h2>
+        <pre><code>
+const scores = [78, 92, 65, 88];
+const asc = [...scores].sort((a, b) => a - b);
+const desc = [...scores].sort((a, b) => b - a);
+        </code></pre>
+        <div class="actions">
+          <button id="run-btn" type="button">Run example</button>
+          <p id="output" class="output">Click the button.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

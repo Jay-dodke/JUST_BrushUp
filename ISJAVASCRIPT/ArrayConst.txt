@@ -1,0 +1,9 @@
+What:
+const locks the variable binding, not array content.
+
+Friendly example:
+You can update fruits inside the same basket.
+
+Best use:
+Use const for arrays by default, then mutate items when needed.
+

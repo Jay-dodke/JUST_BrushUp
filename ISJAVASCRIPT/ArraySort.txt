@@ -1,0 +1,9 @@
+What:
+Sort arranges values in order.
+
+Friendly example:
+Sort exam scores for ranking.
+
+Best use:
+For numbers, always pass compare function: (a, b) => a - b.
+

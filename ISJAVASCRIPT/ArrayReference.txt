@@ -1,0 +1,9 @@
+What:
+Arrays are reference types.
+
+Friendly example:
+Two variables can point to the same classroom list.
+
+Best use:
+Copy with spread [...arr] before editing if you need separate data.
+

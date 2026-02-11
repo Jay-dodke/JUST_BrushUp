@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Reference</title>
+    <link rel="stylesheet" href="ArrayReference.css" />
+    <script src="ArrayReference.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+    
+        <h1>JavaScript Array Reference</h1>
+        <p>Understand shared reference using a classroom roll-number list.</p>
+      </header>
+
+      <section class="card">
+        <h2>Example</h2>
+        <pre><code>
+const classA = [1, 2, 3];
+const sameList = classA;
+sameList.push(4); // classA also changes
+
+const copiedList = [...classA];
+copiedList.push(5); // classA does not change
+        </code></pre>
+        <div class="actions">
+          <button id="run-btn" type="button">Run example</button>
+          <p id="output" class="output">Click the button.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

@@ -1,0 +1,9 @@
+What:
+Iteration methods run logic on each item.
+
+Friendly example:
+Analyze monthly expenses with filter, map, and forEach.
+
+Best use:
+Use map for transformation, filter for selection, reduce/forEach for totals.
+

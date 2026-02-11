@@ -1,0 +1,9 @@
+What:
+Array methods are built-in actions for arrays.
+
+Friendly example:
+Update a student task list with push, shift, and unshift.
+
+Best use:
+Prefer methods instead of manual index editing.
+

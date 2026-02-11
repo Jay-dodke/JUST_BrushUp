@@ -1,0 +1,9 @@
+What:
+Search methods help locate values in arrays.
+
+Friendly example:
+Search for friends in a contact list.
+
+Best use:
+Use includes for yes/no checks, find for matching item, indexOf for position.
+

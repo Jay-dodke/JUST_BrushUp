@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Iterations</title>
+    <link rel="stylesheet" href="ArrayIterations.css" />
+    <script src="ArrayIterations.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <span class="badge">Learn Only</span>
+        <h1>JavaScript Array Iterations</h1>
+        <p>Use map, filter, and forEach with a monthly expense list.</p>
+      </header>
+
+      <section class="card">
+        <h2>Friendly Example</h2>
+        <pre><code>
+const expenses = [1200, 850, 400, 2200];
+const high = expenses.filter((e) => e >= 1000);
+const withTax = expenses.map((e) => Math.round(e * 1.05));
+        </code></pre>
+        <div class="actions">
+          <button id="run-btn" type="button">Run example</button>
+          <p id="output" class="output">Click the button.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

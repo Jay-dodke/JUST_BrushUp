@@ -1,0 +1,9 @@
+What:
+Array stores many values in one variable.
+
+Friendly example:
+A grocery list like ["Milk", "Bread", "Eggs", "Apples"].
+
+Best use:
+Use arrays when order matters and you need list operations.
+
