@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Set Methods</title>
+    <link rel="stylesheet" href="IsSetMethod.css" />
+    <script src="IsSetMethod.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>JavaScript Set Methods</h1>
+        <p>Learn how to add, delete, check, and loop values in a Set.</p>
+      </header>
+
+      <section class="card">
+        <h2>Explain</h2>
+        <p>
+          A Set stores unique values only. Use <code>add()</code> to insert,
+          <code>has()</code> to check, <code>delete()</code> to remove, and
+          <code>size</code> to count values.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Example</h2>
+        <pre><code>
+const topics = new Set(["HTML", "CSS"]);
+topics.add("JavaScript");
+topics.add("CSS"); // ignored (already exists)
+
+const hasCss = topics.has("CSS");
+topics.delete("HTML");
+const count = topics.size;
+        </code></pre>
+        <div class="actions">
+          <button id="run-btn" type="button">Run example</button>
+          <p id="output" class="output">Click the button.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

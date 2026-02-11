@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript WeakSet</title>
+    <link rel="stylesheet" href="IsSetWeakSet.css" />
+    <script src="IsSetWeakSet.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>JavaScript WeakSet</h1>
+        <p>Store object references only, with weak memory behavior.</p>
+      </header>
+
+      <section class="card">
+        <h2>Explain</h2>
+        <p>
+          WeakSet can only store objects. It supports
+          <code>add()</code>, <code>has()</code>, and <code>delete()</code>,
+          but cannot be iterated or counted with <code>size</code>.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Example</h2>
+        <pre><code>
+const ws = new WeakSet();
+const student = { name: "Asha" };
+
+ws.add(student);
+const existsBefore = ws.has(student);
+ws.delete(student);
+const existsAfter = ws.has(student);
+        </code></pre>
+        <div class="actions">
+          <button id="run-btn" type="button">Run example</button>
+          <p id="output" class="output">Click the button.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

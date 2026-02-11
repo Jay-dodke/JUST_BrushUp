@@ -1,0 +1,8 @@
+What:
+Set methods help manage unique values.
+
+Explain:
+Use add() to insert values, has() to check, delete() to remove, and size to count items.
+
+Example use:
+Store unique technologies so duplicates are automatically ignored.

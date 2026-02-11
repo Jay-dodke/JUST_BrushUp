@@ -1,0 +1,8 @@
+What:
+Set logic compares and combines unique collections.
+
+Explain:
+Union combines two Sets, intersection keeps common values, and difference keeps values only in one Set.
+
+Example use:
+Compare two student club lists to find common members and unique members.

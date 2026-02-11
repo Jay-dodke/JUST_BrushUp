@@ -1,0 +1,8 @@
+What:
+Sets are reference types in JavaScript.
+
+Explain:
+Assigning one Set variable to another shares the same object. Use new Set(oldSet) to create a separate copy.
+
+Example use:
+Copy a Set before changes when you need original and updated versions separately.

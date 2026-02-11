@@ -1,0 +1,8 @@
+What:
+WeakSet stores object references only.
+
+Explain:
+WeakSet accepts only objects and is not iterable. It is useful for temporary membership checks tied to object lifetime.
+
+Example use:
+Track visited DOM nodes or processed object instances without preventing garbage collection.

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Set Logic</title>
+    <link rel="stylesheet" href="Issetlogic.css" />
+    <script src="Issetlogic.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>JavaScript Set Logic</h1>
+        <p>Use Set operations like union, intersection, and difference.</p>
+      </header>
+
+      <section class="card">
+        <h2>Explain</h2>
+        <p>
+          Set logic combines or compares two Sets. Union joins all values,
+          intersection keeps common values, and difference keeps only unique
+          values from one Set.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Example</h2>
+        <pre><code>
+const a = new Set([1, 2, 3, 4]);
+const b = new Set([3, 4, 5, 6]);
+
+const union = new Set([...a, ...b]);
+const intersection = new Set([...a].filter((v) => b.has(v)));
+const difference = new Set([...a].filter((v) => !b.has(v)));
+        </code></pre>
+        <div class="actions">
+          <button id="run-btn" type="button">Run example</button>
+          <p id="output" class="output">Click the button.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

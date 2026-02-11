@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Set Reference</title>
+    <link rel="stylesheet" href="Setrefernce.css" />
+    <script src="Setrefernce.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>JavaScript Set Reference</h1>
+        <p>Understand shared reference vs copied Set values.</p>
+      </header>
+
+      <section class="card">
+        <h2>Explain</h2>
+        <p>
+          If two variables point to the same Set, both reflect the same changes.
+          Create a new Set with <code>new Set(oldSet)</code> to make a copy.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Example</h2>
+        <pre><code>
+const setA = new Set([1, 2, 3]);
+const sameSet = setA;
+sameSet.add(4); // setA also changes
+
+const copiedSet = new Set(setA);
+copiedSet.add(5); // setA does not change
+        </code></pre>
+        <div class="actions">
+          <button id="run-btn" type="button">Run example</button>
+          <p id="output" class="output">Click the button.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
