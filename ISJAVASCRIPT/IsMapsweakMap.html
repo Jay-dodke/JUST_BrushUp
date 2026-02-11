@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Map vs WeakMap</title>
+    <link rel="stylesheet" href="IsMapsweakMap.css" />
+    <script src="IsMapsweakMap.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>JavaScript Map vs WeakMap</h1>
+        <p>
+          Understand how <code>WeakMap</code> works, when to use it, and how it
+          differs from <code>Map</code>.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>What is WeakMap?</h2>
+        <p>
+          <code>WeakMap</code> stores key-value pairs where keys must be
+          objects. If a key object has no other references in your program,
+          JavaScript can garbage-collect it, and its WeakMap entry can disappear
+          automatically.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>How WeakMap Works (Step by Step)</h2>
+        <ul>
+          <li>Create a key object, then attach hidden data with <code>set()</code>.</li>
+          <li>Read with <code>get()</code>, verify with <code>has()</code>.</li>
+          <li>Remove explicitly with <code>delete()</code> if needed.</li>
+          <li>
+            No iteration and no <code>size</code>, because keys are weakly held
+            and can disappear at any time.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Example 1: Basic WeakMap Methods</h2>
+        <pre><code>
+const wm = new WeakMap();
+const user = { id: 101, name: "Asha" };
+
+wm.set(user, { role: "Admin" });
+const role = wm.get(user).role; // Admin
+const hasUser = wm.has(user);   // true
+wm.delete(user);
+        </code></pre>
+        <div class="actions">
+          <button id="run-basic-btn" type="button">Run basic example</button>
+          <p id="basic-output" class="output">Click the button.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Example 2: Private Data Pattern</h2>
+        <pre><code>
+const privateData = new WeakMap();
+
+class Account {
+  constructor(owner, balance) {
+    privateData.set(this, { owner, balance });
+  }
+
+  getSummary() {
+    const data = privateData.get(this);
+    return `${data.owner} has ${data.balance}`;
+  }
+}
+        </code></pre>
+        <div class="actions">
+          <button id="run-private-btn" type="button">Run private-data example</button>
+          <p id="private-output" class="output">Click the button.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Example 3: Map vs WeakMap Key Rules</h2>
+        <pre><code>
+const map = new Map();
+map.set("token", "abc123"); // valid
+
+const weak = new WeakMap();
+weak.set({ id: 1 }, "ok");   // valid
+weak.set("token", "abc123"); // TypeError (primitive key)
+        </code></pre>
+        <div class="actions">
+          <button id="run-compare-btn" type="button">Run comparison</button>
+          <p id="compare-output" class="output">Click the button.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>When to Use Which?</h2>
+        <ul>
+          <li>Use <code>Map</code> for iterable, countable, general key-value data.</li>
+          <li>
+            Use <code>WeakMap</code> for object-associated metadata or private
+            state that should not keep objects alive.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

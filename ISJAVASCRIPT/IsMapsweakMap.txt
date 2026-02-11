@@ -1,0 +1,36 @@
+﻿Topic:
+JavaScript Map vs WeakMap (focused on WeakMap behavior)
+
+What is WeakMap?
+WeakMap is a collection of key-value pairs where keys must be objects. The key references are weak, so WeakMap does not prevent those key objects from being garbage-collected.
+
+How it works:
+1. Create a WeakMap: const wm = new WeakMap();
+2. Add data with object key: wm.set(obj, value)
+3. Read with wm.get(obj)
+4. Check with wm.has(obj)
+5. Remove with wm.delete(obj)
+
+Important rules:
+1. Keys must be objects (no string/number/boolean keys).
+2. WeakMap is not iterable.
+3. WeakMap has no size property.
+4. You cannot clear all entries at once (no clear method).
+5. Entries can disappear automatically after key object is garbage-collected.
+
+Map vs WeakMap:
+1. Map accepts any key type; WeakMap accepts only object keys.
+2. Map is iterable; WeakMap is not iterable.
+3. Map has size and clear(); WeakMap does not.
+4. Map strongly holds keys; WeakMap weakly holds keys.
+
+Why WeakMap exists:
+WeakMap is useful for object metadata/private state where you do not want the metadata storage to keep objects alive in memory.
+
+Common real use cases:
+1. Private data for class instances.
+2. Caching results by object key.
+3. Tracking DOM nodes or framework objects without memory leaks.
+
+Note:
+You cannot force garbage collection from normal JS code, so auto-removal behavior cannot be shown deterministically in a simple demo.
