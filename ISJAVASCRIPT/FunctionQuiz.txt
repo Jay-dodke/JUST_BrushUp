@@ -1,0 +1,8 @@
+Function Quiz Notes
+
+Q1:
+add(2, 3) output = 5
+
+Q2:
+Parameter = variable in definition
+Argument = value in function call

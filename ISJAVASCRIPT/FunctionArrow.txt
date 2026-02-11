@@ -1,0 +1,7 @@
+Function Arrow
+
+Arrow function is shorter syntax.
+Good for small callbacks and short functions.
+
+Real-life:
+studentPass(marks) checks pass/fail quickly.

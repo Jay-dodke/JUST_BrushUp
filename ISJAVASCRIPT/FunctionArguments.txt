@@ -1,0 +1,7 @@
+Function Arguments
+
+Arguments are actual values at call time.
+Parameters are variable names in definition.
+
+Real-life:
+studentResult("Meera", 88)

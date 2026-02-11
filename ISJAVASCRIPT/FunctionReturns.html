@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Returns</title>
+    <link rel="stylesheet" href="FunctionReturns.css" />
+    <script src="FunctionReturns.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Function Returns</h1>
+      <p><code>return</code> sends output from function to caller.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Example</h2>
+        <pre><code>
+function getGrade(marks) {
+  if (marks >= 90) return "A";
+  return "B";
+}
+        </code></pre>
+        <button id="run-btn" type="button">Run returns</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

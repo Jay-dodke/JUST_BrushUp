@@ -1,0 +1,7 @@
+Function Parameters
+
+Parameters are placeholders in function definition.
+Example: (name, marks)
+
+Real-life:
+studentFunction("Aman", 92)

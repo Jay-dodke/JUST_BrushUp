@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Quiz</title>
+    <link rel="stylesheet" href="FunctionQuiz.css" />
+    <script src="FunctionQuiz.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Function Quiz</h1>
+      <p>Small check for understanding.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Q1: What is output?</h2>
+        <pre><code>
+function add(a, b) {
+  return a + b;
+}
+add(2, 3);
+        </code></pre>
+        <button id="q1-btn" type="button">Show answer</button>
+        <p id="q1-output" class="output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Q2: Parameter or Argument?</h2>
+        <pre><code>
+function student(name) {}
+student("Riya");
+        </code></pre>
+        <button id="q2-btn" type="button">Show answer</button>
+        <p id="q2-output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

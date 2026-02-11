@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Expressions</title>
+    <link rel="stylesheet" href="FunctionExpressions.css" />
+    <script src="FunctionExpressions.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Function Expressions</h1>
+      <p>Function can be stored in a variable.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Example</h2>
+        <pre><code>
+const studentFeeStatus = function (paid) {
+  return paid ? "Paid" : "Pending";
+};
+        </code></pre>
+        <button id="run-btn" type="button">Run expression</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

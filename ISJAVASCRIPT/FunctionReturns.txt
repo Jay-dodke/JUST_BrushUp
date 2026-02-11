@@ -1,0 +1,7 @@
+Function Returns
+
+Use return to send final value.
+Without return, output is undefined.
+
+Real-life:
+getGrade(95) returns "A".

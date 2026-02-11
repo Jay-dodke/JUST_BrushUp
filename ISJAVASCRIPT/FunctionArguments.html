@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Arguments</title>
+    <link rel="stylesheet" href="FunctionArguments.css" />
+    <script src="FunctionArguments.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Function Arguments</h1>
+      <p>Arguments are real values passed when calling function.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Example</h2>
+        <pre><code>
+function studentResult(name, marks) {
+  return `${name}: ${marks}`;
+}
+
+studentResult("Aman", 80); // arguments
+        </code></pre>
+        <button id="run-btn" type="button">Run arguments</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

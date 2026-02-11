@@ -1,0 +1,10 @@
+
+
+What:
+Function is a reusable code block.
+
+Why:
+Avoid repeating the same logic.
+
+Real-life example:
+studentFunction(name) returns student attendance message.

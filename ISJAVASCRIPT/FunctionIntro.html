@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Intro</title>
+    <link rel="stylesheet" href="FunctionIntro.css" />
+    <script src="FunctionIntro.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Function Intro</h1>
+      <p>Function = reusable block of code. Write once, use many times.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Basic Idea</h2>
+        <pre><code>
+function greet() {
+  return "Welcome!";
+}
+        </code></pre>
+      </section>
+      <section class="card">
+        <h2>Real Life Example (Student)</h2>
+        <pre><code>
+function studentFunction(name) {
+  return `${name} is present today.`;
+}
+        </code></pre>
+        <button id="run-btn" type="button">Run example</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

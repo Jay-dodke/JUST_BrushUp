@@ -1,0 +1,13 @@
+JS Functions Study Path
+
+1) Function Intro
+2) Function Invocation
+3) Function Parameters
+4) Function Returns
+5) Function Arguments
+6) Function Expressions
+7) Function Arrow
+8) Function Quiz
+
+Best way:
+Learn one topic, run code, then do one small practice.

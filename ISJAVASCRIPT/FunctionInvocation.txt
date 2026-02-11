@@ -1,0 +1,7 @@
+Function Invocation
+
+Call function by writing:
+functionName()
+
+Real-life example:
+markAttendance() updates daily attendance status.

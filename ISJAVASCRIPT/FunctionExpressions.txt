@@ -1,0 +1,7 @@
+Function Expressions
+
+Store function in variable.
+Useful when passing function as value.
+
+Real-life:
+studentFeeStatus(true) => "Fee Paid"
