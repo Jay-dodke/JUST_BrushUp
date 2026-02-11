@@ -1,0 +1,63 @@
+What:
+Map methods are functions and properties that let you create, read, update, delete, iterate, and reset key-value data in JavaScript Maps.
+
+Detailed methods:
+1. set(key, value)
+- Adds a new entry if key is new.
+- Updates value if key already exists.
+- Returns the same Map, so chaining is possible.
+Example:
+const m = new Map();
+m.set("a", 1).set("b", 2);
+
+2. get(key)
+- Returns the value for the key.
+- Returns undefined if key is missing.
+Example:
+m.get("a"); // 1
+m.get("x"); // undefined
+
+3. has(key)
+- Returns true/false if key exists.
+Example:
+m.has("b"); // true
+
+4. delete(key)
+- Removes the key if present.
+- Returns true if deleted, false if key was not found.
+Example:
+m.delete("b");
+
+5. clear()
+- Removes all entries from the map.
+Example:
+m.clear();
+
+6. size
+- Property (not a function) that returns entry count.
+Example:
+const count = m.size;
+
+7. keys(), values(), entries()
+- keys() gives all keys iterator.
+- values() gives all values iterator.
+- entries() gives [key, value] pairs iterator.
+Example:
+for (const [k, v] of m.entries()) {
+  console.log(k, v);
+}
+
+8. forEach(callback)
+- Runs callback for each map entry in insertion order.
+- Callback parameters: value, key, map.
+Example:
+m.forEach((value, key) => console.log(key, value));
+
+Important behavior:
+1. Map preserves insertion order.
+2. Keys can be any data type (objects, functions, numbers, strings).
+3. Object keys are reference-based:
+   two objects with same shape are different keys unless same reference.
+
+Best use:
+Use Map when you need reliable key-value storage with non-string keys and ordered iteration.
