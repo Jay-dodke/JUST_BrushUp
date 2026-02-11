@@ -1,0 +1,19 @@
+What:
+Temporal is the modern JavaScript date-time API.
+
+Why:
+It avoids many Date problems: mutable objects, timezone confusion, and inconsistent parsing.
+
+Core concepts:
+1. Temporal.PlainDate: date only (no time zone).
+2. Temporal.Instant: exact timestamp.
+3. Temporal.ZonedDateTime: date-time with timezone.
+4. Arithmetic is immutable with add() and subtract().
+
+Best way (concept):
+- Use PlainDate for birthdays, schedules, and date-only values.
+- Use ZonedDateTime for real-world local event times.
+- Use feature detection: if ("Temporal" in globalThis) before using Temporal.
+
+Example:
+Temporal.PlainDate.from("2026-05-01").add({ days: 7 })

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Temporal</title>
+    <link rel="stylesheet" href="Temporal.css" />
+    <script src="Temporal.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Temporal</h1>
+      <p class="lede">Concept-first guide: Temporal basics, Date vs Temporal, PlainDate, and arithmetic.</p>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>Why Temporal?</h2>
+        <ul>
+          <li>Immutable objects (safer than mutating Date).</li>
+          <li>Clear types: PlainDate, Instant, ZonedDateTime.</li>
+          <li>Strict parsing and better timezone handling.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Temporal vs Date (Quick)</h2>
+        <pre><code>
+Date month index: 0-based (Jan = 0)
+Temporal month index: 1-based (Jan = 1)
+
+Date can mix local timezone behavior.
+Temporal separates date/time types.
+        </code></pre>
+      </section>
+
+      <section class="card">
+        <h2>Best Way Example</h2>
+        <p>Use <code>Temporal.PlainDate</code> for date-only values and immutable arithmetic.</p>
+        <pre><code>
+const d = Temporal.PlainDate.from("2026-05-01");
+const nextWeek = d.add({ days: 7 });
+const lastWeek = d.subtract({ days: 7 });
+        </code></pre>
+        <button class="btn" id="run-btn" type="button">Run example</button>
+        <p class="output" id="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>
