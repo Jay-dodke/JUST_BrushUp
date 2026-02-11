@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Strict Mode</title>
+    <link rel="stylesheet" href="JSStrictMode.css" />
+    <script src="JSStrictMode.js" defer></script>
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="menu">
+        <a href="JSScope.html">JS Scope</a>
+        <a href="JSCodeBlocks.html">JS Code Blocks</a>
+        <a href="JSHoisting.html">JS Hoisting</a>
+        <a class="active" href="JSStrictMode.html">JS Strict Mode</a>
+      </aside>
+
+      <section class="content">
+        <h1>JS Strict Mode</h1>
+        <p>Strict mode catches common mistakes and makes JavaScript safer.</p>
+
+        <pre><code>
+"use strict";
+
+function add(a, b) {
+  return a + b;
+}
+        </code></pre>
+
+        <button id="run-btn" type="button">Run example</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

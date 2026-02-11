@@ -1,0 +1,8 @@
+What:
+Hoisting is JS behavior where declarations are processed before execution.
+
+Why:
+Explains why function declarations can run before their line.
+
+Example:
+hello() works before function hello() declaration.

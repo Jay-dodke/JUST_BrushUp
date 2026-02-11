@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Hoisting</title>
+    <link rel="stylesheet" href="JSHoisting.css" />
+    <script src="JSHoisting.js" defer></script>
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="menu">
+        <a href="JSScope.html">JS Scope</a>
+        <a href="JSCodeBlocks.html">JS Code Blocks</a>
+        <a class="active" href="JSHoisting.html">JS Hoisting</a>
+        <a href="JSStrictMode.html">JS Strict Mode</a>
+      </aside>
+
+      <section class="content">
+        <h1>JS Hoisting</h1>
+        <p>Declarations move to the top of their scope during execution phase.</p>
+
+        <pre><code>
+hello();
+
+function hello() {
+  return "Function hoisting works.";
+}
+        </code></pre>
+
+        <button id="run-btn" type="button">Run example</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

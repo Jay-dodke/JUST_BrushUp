@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Scope</title>
+    <link rel="stylesheet" href="JSScope.css" />
+    <script src="JSScope.js" defer></script>
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="menu">
+        <a class="active" href="JSScope.html">JS Scope</a>
+        <a href="JSCodeBlocks.html">JS Code Blocks</a>
+        <a href="JSHoisting.html">JS Hoisting</a>
+        <a href="JSStrictMode.html">JS Strict Mode</a>
+      </aside>
+
+      <section class="content">
+        <h1>JS Scope</h1>
+        <p>Scope decides where a variable can be accessed.</p>
+
+        <pre><code>
+let city = "Delhi"; // global scope
+
+function showCity() {
+  let school = "ABC School"; // function scope
+  return `${city} - ${school}`;
+}
+        </code></pre>
+
+        <button id="run-btn" type="button">Run example</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

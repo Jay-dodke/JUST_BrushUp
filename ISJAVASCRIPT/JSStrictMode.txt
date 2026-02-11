@@ -1,0 +1,8 @@
+What:
+Strict mode is enabled by "use strict".
+
+Why:
+It blocks unsafe actions and catches silent errors.
+
+Example:
+Use strict mode and run add(10, 20).

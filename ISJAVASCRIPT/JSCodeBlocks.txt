@@ -1,0 +1,8 @@
+What:
+A code block is code inside curly braces `{ }`.
+
+Why:
+With let/const, block creates its own variable scope.
+
+Example:
+msg inside block is different from msg outside block.

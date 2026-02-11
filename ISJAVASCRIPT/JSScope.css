@@ -1,0 +1,74 @@
+:root {
+  --panel: #243544;
+  --active: #06b573;
+  --text: #f6f7f9;
+  --bg: #f3f7fb;
+  --card: #ffffff;
+  --ink: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.menu {
+  background: var(--panel);
+  padding: 0.3rem 0;
+}
+
+.menu a {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.65rem 1rem;
+  font-size: 1.8rem;
+}
+
+.menu .active {
+  background: var(--active);
+}
+
+.content {
+  padding: 1.5rem;
+  background: var(--card);
+}
+
+pre {
+  background: #eef4fa;
+  border-radius: 10px;
+  padding: 0.8rem;
+  overflow-x: auto;
+}
+
+button {
+  border: 1px solid var(--panel);
+  background: var(--panel);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.output {
+  color: #0a7f53;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

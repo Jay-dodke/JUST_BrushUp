@@ -1,0 +1,8 @@
+What:
+Scope tells where variables are visible.
+
+Why:
+Prevents variable conflicts and keeps code safe.
+
+Example:
+Global variable city is used inside function showCity().
