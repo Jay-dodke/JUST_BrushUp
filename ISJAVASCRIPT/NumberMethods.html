@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Number Methods</title>
+    <link rel="stylesheet" href="NumberMethods.css" />
+    <script src="NumberMethods.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Number Methods</h1>
+      <p class="lede">
+        Learn common methods and helper functions to format and convert numeric values.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>toString()</h2>
+        <pre><code>
+let n = 255;
+n.toString();
+n.toString(16);
+        </code></pre>
+        <button class="btn" id="to-string-btn" type="button">Run toString()</button>
+        <p class="output" id="to-string-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>toExponential()</h2>
+        <pre><code>
+let n = 12345.6789;
+n.toExponential(2);
+        </code></pre>
+        <button class="btn" id="exp-btn" type="button">Run exponential</button>
+        <p class="output" id="exp-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>toFixed() and toPrecision()</h2>
+        <pre><code>
+let price = 9.87654;
+price.toFixed(2);
+price.toPrecision(4);
+        </code></pre>
+        <button class="btn" id="format-btn" type="button">Run formatting</button>
+        <p class="output" id="format-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>valueOf()</h2>
+        <pre><code>
+let x = new Number(500);
+x.valueOf();
+        </code></pre>
+        <button class="btn" id="value-btn" type="button">Run valueOf()</button>
+        <p class="output" id="value-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>parseInt(), parseFloat(), Number()</h2>
+        <pre><code>
+parseInt("42.9");
+parseFloat("42.9px");
+Number("42.9");
+        </code></pre>
+        <button class="btn" id="parse-btn" type="button">Run parsing</button>
+        <p class="output" id="parse-output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

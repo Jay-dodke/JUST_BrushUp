@@ -1,0 +1,20 @@
+JavaScript Number Methods (simple notes)
+
+1) toString()
+Converts number to string, optional base.
+Example: 255.toString(16) => "ff"
+
+2) toExponential()
+Formats with exponential notation.
+
+3) toFixed()
+Returns string with fixed decimals.
+
+4) toPrecision()
+Formats to given total digits.
+
+5) valueOf()
+Returns primitive number from Number object.
+
+6) parseInt(), parseFloat(), Number()
+Convert strings to numbers in different ways.

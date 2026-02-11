@@ -1,0 +1,16 @@
+JavaScript Number Properties (simple notes)
+
+1) Number.MAX_VALUE
+Largest possible number value.
+
+2) Number.MIN_VALUE
+Smallest positive number value.
+
+3) Number.EPSILON
+Difference between 1 and the smallest value greater than 1.
+
+4) Safe Integer Range
+MAX_SAFE_INTEGER and MIN_SAFE_INTEGER define safe exact integer bounds.
+
+5) Static Check Methods
+Number.isFinite(), Number.isInteger(), Number.isSafeInteger(), Number.isNaN()

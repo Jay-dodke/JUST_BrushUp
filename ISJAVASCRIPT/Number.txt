@@ -1,0 +1,21 @@
+JavaScript Numbers (simple notes based on W3Schools topics)
+
+1) Number Basics
+JavaScript uses one number type for integers and decimals.
+Example: 25, 2.5
+
+2) Scientific Notation
+Use e for powers of 10.
+Example: 123e5, 123e-5
+
+3) Precision
+Decimal math can produce tiny errors.
+Example: 0.1 + 0.2 => 0.30000000000000004
+
+4) Number with Strings
+"100" + 10 gives string concatenation.
+"100" - 10 gives numeric subtraction.
+
+5) Special Values
+Infinity: dividing by 0
+NaN: invalid numeric operation

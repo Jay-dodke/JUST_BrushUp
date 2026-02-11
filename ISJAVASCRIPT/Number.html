@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Numbers</title>
+    <link rel="stylesheet" href="Number.css" />
+    <script src="Number.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Numbers: Basics, Precision, Conversions, Safety</h1>
+      <p class="lede">
+        JavaScript has one main number type for integer and decimal values, plus special values
+        like <code>Infinity</code> and <code>NaN</code>.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>Number Basics</h2>
+        <pre><code>
+let a = 25;
+let b = 2.5;
+let sum = a + b;
+        </code></pre>
+        <button class="btn" id="basic-btn" type="button">Run basics</button>
+        <p class="output" id="basic-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Scientific Notation</h2>
+        <pre><code>
+let large = 123e5;
+let small = 123e-5;
+        </code></pre>
+        <button class="btn" id="scientific-btn" type="button">Run scientific</button>
+        <p class="output" id="scientific-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Precision Problem</h2>
+        <pre><code>
+0.1 + 0.2; // 0.30000000000000004
+        </code></pre>
+        <button class="btn" id="precision-btn" type="button">Run precision</button>
+        <p class="output" id="precision-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Numbers and Strings</h2>
+        <pre><code>
+"100" + 10; // "10010"
+"100" - 10; // 90
+        </code></pre>
+        <button class="btn" id="convert-btn" type="button">Run conversion</button>
+        <p class="output" id="convert-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Special Values</h2>
+        <pre><code>
+10 / 0;     // Infinity
+"abc" / 2;  // NaN
+        </code></pre>
+        <button class="btn" id="special-btn" type="button">Run special values</button>
+        <p class="output" id="special-output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

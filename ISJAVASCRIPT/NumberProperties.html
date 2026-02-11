@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Number Properties</title>
+    <link rel="stylesheet" href="NumberProperties.css" />
+    <script src="NumberProperties.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Number Properties and Static Helpers</h1>
+      <p class="lede">
+        Understand number limits, special constants, and static checking methods.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>Core Constants</h2>
+        <pre><code>
+Number.MAX_VALUE
+Number.MIN_VALUE
+Number.EPSILON
+        </code></pre>
+        <button class="btn" id="constants-btn" type="button">Show constants</button>
+        <p class="output" id="constants-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Safe Integers</h2>
+        <pre><code>
+Number.MAX_SAFE_INTEGER
+Number.MIN_SAFE_INTEGER
+        </code></pre>
+        <button class="btn" id="safe-btn" type="button">Show safe range</button>
+        <p class="output" id="safe-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>isFinite()</h2>
+        <pre><code>
+Number.isFinite(100);
+Number.isFinite(Infinity);
+        </code></pre>
+        <button class="btn" id="finite-btn" type="button">Run isFinite()</button>
+        <p class="output" id="finite-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>isInteger() and isSafeInteger()</h2>
+        <pre><code>
+Number.isInteger(12.0);
+Number.isSafeInteger(9007199254740991);
+        </code></pre>
+        <button class="btn" id="integer-btn" type="button">Run integer checks</button>
+        <p class="output" id="integer-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>isNaN()</h2>
+        <pre><code>
+Number.isNaN(NaN);
+Number.isNaN("NaN");
+        </code></pre>
+        <button class="btn" id="nan-btn" type="button">Run isNaN()</button>
+        <p class="output" id="nan-output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

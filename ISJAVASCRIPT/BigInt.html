@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript BigInt</title>
+    <link rel="stylesheet" href="BigInt.css" />
+    <script src="BigInt.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript BigInt</h1>
+      <p class="lede">
+        <code>BigInt</code> stores integers larger than the safe integer limit of normal
+        JavaScript numbers.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>Create BigInt</h2>
+        <pre><code>
+const a = 9007199254740991n;
+const b = BigInt("9007199254740993");
+        </code></pre>
+        <button class="btn" id="create-btn" type="button">Run creation</button>
+        <p class="output" id="create-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Arithmetic</h2>
+        <pre><code>
+10n + 3n;
+10n * 3n;
+10n / 3n; // 3n (integer division)
+        </code></pre>
+        <button class="btn" id="arith-btn" type="button">Run arithmetic</button>
+        <p class="output" id="arith-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>BigInt and Number Mix</h2>
+        <pre><code>
+10n + 1; // TypeError
+        </code></pre>
+        <button class="btn" id="mix-btn" type="button">Run mix demo</button>
+        <p class="output" id="mix-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Comparisons</h2>
+        <pre><code>
+10n == 10;   // true
+10n === 10;  // false
+20n > 15;    // true
+        </code></pre>
+        <button class="btn" id="compare-btn" type="button">Run comparisons</button>
+        <p class="output" id="compare-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Safe Integer Example</h2>
+        <pre><code>
+Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2
+        </code></pre>
+        <button class="btn" id="safe-btn" type="button">Run safe integer demo</button>
+        <p class="output" id="safe-output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+JavaScript BigInt (simple notes)
+
+1) Why BigInt
+Use BigInt when integers are larger than Number.MAX_SAFE_INTEGER.
+
+2) Create BigInt
+Add n suffix: 123n
+Or use BigInt("123")
+
+3) BigInt Arithmetic
+Works with +, -, *, /, %, ** on BigInt values.
+Division truncates decimals.
+
+4) Mixing Types
+Cannot directly mix BigInt and Number in arithmetic.
+Convert first using BigInt() or Number().
+
+5) Comparisons
+Loose comparison can match Number values.
+Strict comparison checks type, so BigInt !== Number.

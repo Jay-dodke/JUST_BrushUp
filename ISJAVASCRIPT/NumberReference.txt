@@ -1,0 +1,17 @@
+JavaScript Number Reference (quick notes)
+
+1) Constructor
+Number(value) converts input to number.
+
+2) Common Instance Methods
+toString(), toFixed(), toExponential(), toPrecision(), valueOf()
+
+3) Parsing Helpers
+Number.parseInt(text, radix)
+Number.parseFloat(text)
+
+4) Static Checks
+Number.isFinite(), Number.isInteger(), Number.isSafeInteger(), Number.isNaN()
+
+5) Useful Constants
+Number.NaN, Number.POSITIVE_INFINITY, Number.NEGATIVE_INFINITY, Number.EPSILON

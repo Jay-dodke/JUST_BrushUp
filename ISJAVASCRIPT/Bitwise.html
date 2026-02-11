@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Bitwise</title>
+    <link rel="stylesheet" href="Bitwise.css" />
+    <script src="Bitwise.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Bitwise Operators</h1>
+      <p class="lede">
+        Bitwise operators work on 32-bit integer values. They are useful for masks, flags, and
+        fast low-level operations.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>AND (&amp;), OR (|), XOR (^)</h2>
+        <pre><code>
+5 & 1;  // 1
+5 | 1;  // 5
+5 ^ 1;  // 4
+        </code></pre>
+        <button class="btn" id="logic-btn" type="button">Run logic ops</button>
+        <p class="output" id="logic-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>NOT (~)</h2>
+        <pre><code>
+~5; // -6
+        </code></pre>
+        <button class="btn" id="not-btn" type="button">Run NOT</button>
+        <p class="output" id="not-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Left and Right Shift</h2>
+        <pre><code>
+5 << 1; // 10
+5 >> 1; // 2
+        </code></pre>
+        <button class="btn" id="shift-btn" type="button">Run shifts</button>
+        <p class="output" id="shift-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Unsigned Right Shift (>>> )</h2>
+        <pre><code>
+-5 >>> 1;
+        </code></pre>
+        <button class="btn" id="unsigned-btn" type="button">Run unsigned shift</button>
+        <p class="output" id="unsigned-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Bit Mask Example</h2>
+        <pre><code>
+const READ = 1;
+const WRITE = 2;
+let permission = READ | WRITE;
+        </code></pre>
+        <button class="btn" id="mask-btn" type="button">Run mask demo</button>
+        <p class="output" id="mask-output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

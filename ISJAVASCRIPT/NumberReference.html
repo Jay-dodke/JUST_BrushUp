@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Number Reference</title>
+    <link rel="stylesheet" href="NumberReference.css" />
+    <script src="NumberReference.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Number Quick Reference</h1>
+      <p class="lede">
+        One-page recap for frequently used Number constants, methods, and conversion helpers.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>Constructor and Type</h2>
+        <pre><code>
+Number("42");
+typeof 42;
+typeof new Number(42);
+        </code></pre>
+        <button class="btn" id="ctor-btn" type="button">Run constructor</button>
+        <p class="output" id="ctor-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Formatting</h2>
+        <pre><code>
+(1234.567).toFixed(2);
+(1234.567).toPrecision(5);
+        </code></pre>
+        <button class="btn" id="format-btn" type="button">Run formatting</button>
+        <p class="output" id="format-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Parsing</h2>
+        <pre><code>
+Number.parseInt("101", 2);
+Number.parseFloat("19.75kg");
+        </code></pre>
+        <button class="btn" id="parse-btn" type="button">Run parsing</button>
+        <p class="output" id="parse-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Checks</h2>
+        <pre><code>
+Number.isFinite(100 / 3);
+Number.isInteger(5.0);
+Number.isNaN(Number("abc"));
+        </code></pre>
+        <button class="btn" id="checks-btn" type="button">Run checks</button>
+        <p class="output" id="checks-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Constants</h2>
+        <pre><code>
+Number.POSITIVE_INFINITY
+Number.NEGATIVE_INFINITY
+Number.NaN
+        </code></pre>
+        <button class="btn" id="const-btn" type="button">Show constants</button>
+        <p class="output" id="const-output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>
