@@ -1,0 +1,21 @@
+﻿JavaScript Syntax, Statements, and Comments (summary based on W3Schools)
+
+1) Syntax basics
+JavaScript statements are usually separated by semicolons.
+JavaScript is case-sensitive and ignores extra whitespace.
+Strings can use single or double quotes.
+
+2) Statements
+A statement is an instruction that performs an action.
+Multiple statements together create a program.
+
+3) Expressions and values
+Expressions produce values (like 5 * 10 or "Hello" + "World").
+Values can be literals or variables.
+
+4) Code blocks
+Blocks group statements with { } and are commonly used with if/for/while.
+
+5) Comments
+Use // for single-line comments and /* */ for multi-line comments.
+Comments are ignored by the JavaScript engine.

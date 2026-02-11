@@ -1,0 +1,24 @@
+﻿JavaScript Output (summary based on W3Schools)
+
+1) Display possibilities
+JavaScript can display data by updating an HTML element (innerHTML/innerText),
+writing to the document with document.write(), showing alert boxes, or logging
+to the browser console with console.log().
+
+2) innerHTML and innerText
+Use document.getElementById("id") to target an element.
+- innerHTML changes the element's HTML content.
+- innerText changes only the plain text.
+
+3) document.write()
+Convenient for testing, but using it after the document loads replaces the
+page content.
+
+4) window.alert()
+Displays a modal alert box for immediate output.
+
+5) console.log()
+Outputs to the browser console for debugging.
+
+6) window.print()
+JavaScript cannot print directly, but window.print() prints the current window.

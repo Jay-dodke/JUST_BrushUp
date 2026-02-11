@@ -1,0 +1,24 @@
+﻿JavaScript Variables, let, const, and Data Types (summary based on W3Schools)
+
+1) Variables
+Variables store data values. Use let for variables that can change and const for
+variables that should not be reassigned.
+
+2) Naming rules
+Names must start with a letter, underscore, or dollar sign. Names are case-sensitive.
+
+3) let
+let is block-scoped and can be reassigned.
+
+4) const
+const is block-scoped and cannot be reassigned. Objects and arrays declared with
+const can still be modified.
+
+5) Data types
+JavaScript uses dynamic typing. Common types include string, number, bigint,
+boolean, undefined, null, symbol, and object (arrays and dates are objects).
+
+Real life examples
+- Shopping cart totals change, so use let.
+- Tax rate or product ID should use const.
+- Event ticket info mixes strings, numbers, and booleans.

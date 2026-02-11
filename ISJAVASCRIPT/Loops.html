@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Loops</title>
+    <link rel="stylesheet" href="Loops.css" />
+    <script src="Loops.js" defer></script>
+  </head>
+
+  <body>
+    <header class="hero">
+      <h1>JavaScript Loops: for, while, break, continue</h1>
+      <p class="lede">
+        Loops repeat code. Use <code>for</code> when you know the count, and use
+        <code>while</code> when you loop until a condition changes.
+      </p>
+    </header>
+
+    <main class="content">
+      <!-- FOR LOOP -->
+      <section class="card">
+        <h2>for loop (counting)</h2>
+        <pre><code>
+for (let i = 1; i &lt;= 5; i++) {
+  total += i;
+}
+      </code></pre>
+        <button class="btn" id="for-demo-btn" type="button">
+          Run for loop
+        </button>
+        <p class="output" id="for-output">Click the button.</p>
+      </section>
+
+      <!-- WHILE LOOP -->
+      <section class="card">
+        <h2>while loop (repeat until)</h2>
+        <pre><code>
+let n = 3;
+while (n &gt; 0) {
+  n--;
+}
+      </code></pre>
+        <button class="btn" id="while-demo-btn" type="button">
+          Run while loop
+        </button>
+        <p class="output" id="while-output">Click the button.</p>
+      </section>
+
+      <!-- BREAK -->
+      <section class="card">
+        <h2>break (stop early)</h2>
+        <pre><code>
+for (let i = 1; i &lt;= 10; i++) {
+  if (i === 4) break;
+}
+      </code></pre>
+        <button class="btn" id="break-demo-btn" type="button">
+          Run break example
+        </button>
+        <p class="output" id="break-output">Click the button.</p>
+      </section>
+
+      <!-- CONTINUE -->
+      <section class="card">
+        <h2>continue (skip one step)</h2>
+        <pre><code>
+for (let i = 1; i &lt;= 5; i++) {
+  if (i === 3) continue;
+}
+      </code></pre>
+        <button class="btn" id="continue-demo-btn" type="button">
+          Run continue example
+        </button>
+        <p class="output" id="continue-output">Click the button.</p>
+      </section>
+
+      <!-- CONTROL FLOW -->
+      <section class="card">
+        <h2>Control flow (one by one)</h2>
+        <p class="muted">Loops + break/continue control the flow.</p>
+        <pre><code>
+for (let i = 1; i &lt;= 5; i++) {
+  if (i === 2) continue;
+  if (i === 4) break;
+}
+      </code></pre>
+        <button class="btn" id="flow-demo-btn" type="button">
+          Run control flow
+        </button>
+        <p class="output" id="flow-output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

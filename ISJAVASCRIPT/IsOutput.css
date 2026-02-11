@@ -1,0 +1,149 @@
+﻿:root {
+  --bg: #f7f2ea;
+  --card: #ffffff;
+  --ink: #1f2a2e;
+  --muted: #56636c;
+  --accent: #1b7f6a;
+  --accent-strong: #145e4f;
+  --shadow: rgba(31, 42, 46, 0.14);
+  --soft: #e4efe9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at top, #fffaf2 0%, var(--bg) 70%);
+}
+
+code,
+pre {
+  font-family: "Courier New", monospace;
+}
+
+pre {
+  background: #f7f7f4;
+  padding: 0.85rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  border: 1px solid #e2e0d8;
+}
+
+.hero {
+  padding: 3.5rem 8vw 2.5rem;
+  background: linear-gradient(135deg, #e5f4f0 0%, #fbe9d5 100%);
+  border-bottom: 1px solid #e6e1d9;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.lede {
+  max-width: 42rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.grid {
+  padding: 2.5rem 8vw 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: 0 14px 30px var(--shadow);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.btn {
+  border: none;
+  background: var(--accent);
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  margin-top: 0.6rem;
+}
+
+.btn:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+}
+
+.output {
+  margin-top: 0.8rem;
+  min-height: 2.5rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  background: var(--soft);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.demo-block {
+  margin-bottom: 1.2rem;
+}
+
+.note {
+  margin-top: 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  background: #fff2e0;
+  color: #7b4c1c;
+  font-size: 0.92rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.clean-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--muted);
+}
+
+.clean-list li {
+  padding: 0.35rem 0;
+}
+
+.status {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2.5rem;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 3rem 6vw 2rem;
+  }
+}

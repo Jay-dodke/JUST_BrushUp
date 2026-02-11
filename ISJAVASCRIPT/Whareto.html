@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="Whareto.css" />
+    <script src="Whareto.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <p class="kicker">JavaScript</p>
+      <h1>Where to place JavaScript in HTML</h1>
+      <p class="lede">
+        JavaScript code is placed between <code>&lt;script&gt;</code> and
+        <code>&lt;/script&gt;</code> tags. Scripts can live in the
+        <code>&lt;head&gt;</code>, in the <code>&lt;body&gt;</code>, or be
+        loaded from external <code>.js</code> files.
+      </p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Script in the &lt;head&gt;</h2>
+        <p>
+          A function can be defined in the head and called later, for example
+          when a user clicks a button.
+        </p>
+        <pre><code>&lt;head&gt;
+  &lt;script&gt;
+    function myFunction() {
+      document.getElementById("demo").innerHTML =
+        "Paragraph changed.";
+    }
+  &lt;/script&gt;
+&lt;/head&gt;</code></pre>
+        <button class="btn" id="head-demo-btn">Try head example</button>
+        <p id="head-demo" class="demo">A Paragraph</p>
+      </section>
+
+      <section class="card">
+        <h2>Script in the &lt;body&gt;</h2>
+        <p>
+          You can also place scripts near the bottom of the body for faster page
+          rendering.
+        </p>
+        <pre><code>&lt;body&gt;
+  &lt;button onclick="myFunction()"&gt;Try it&lt;/button&gt;
+  &lt;script&gt;
+    function myFunction() {
+      document.getElementById("demo").innerHTML =
+        "Paragraph changed.";
+    }
+  &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+        <button class="btn" id="body-demo-btn">Try body example</button>
+        <p id="body-demo" class="demo">A Paragraph</p>
+      </section>
+
+      <section class="card">
+        <h2>External JavaScript</h2>
+        <p>
+          Keeping JavaScript in external files separates HTML and code, improves
+          readability, and lets browsers cache scripts.
+        </p>
+        <pre><code>&lt;script src="myScript.js"&gt;&lt;/script&gt;</code></pre>
+        <button class="btn" id="external-demo-btn">Try external example</button>
+        <p id="external-demo" class="demo">A Paragraph</p>
+      </section>
+
+      <section class="card">
+        <h2>External References</h2>
+        <ul class="clean-list">
+          <li>Full URL: <code>https://www.example.com/myScript.js</code></li>
+          <li>File path: <code>/js/myScript.js</code></li>
+          <li>No path: <code>myScript.js</code></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>JavaScript Where To lesson.</p>
+    </footer>
+  </body>
+</html>

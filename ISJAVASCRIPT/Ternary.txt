@@ -1,0 +1,17 @@
+﻿JavaScript Ternary Operator (simple notes based on W3Schools)
+
+1) What it is
+The ternary operator is a short form of if...else.
+
+2) Syntax
+condition ? valueIfTrue : valueIfFalse
+
+3) How it works
+If the condition is true, it returns the first value. If false, it returns the second.
+
+4) When to use
+Use it for short, clear choices. Use if...else for longer logic.
+
+5) Example
+let age = 20;
+let canVote = age >= 18 ? "Yes" : "No";

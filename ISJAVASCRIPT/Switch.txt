@@ -1,0 +1,32 @@
+﻿JavaScript Switch Statement (simple notes based on W3Schools)
+
+1) What it is
+Switch checks one value and matches it to different cases.
+
+2) Syntax
+switch (value) {
+  case "A":
+    // code
+    break;
+  default:
+    // code
+}
+
+3) break
+Use break to stop after a match. Without break, the code continues to the next case.
+
+4) default
+Default runs when no case matches.
+
+5) Example
+let day = 3;
+switch (day) {
+  case 1:
+    name = "Monday";
+    break;
+  case 2:
+    name = "Tuesday";
+    break;
+  default:
+    name = "Other";
+}
