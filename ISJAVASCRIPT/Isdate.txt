@@ -1,0 +1,15 @@
+What:
+JavaScript Date object handles date and time values.
+
+Why:
+Used to show current time, format dates, compare dates, and schedule logic.
+
+Covered Topics:
+1. Date creation with new Date().
+2. Date formats (ISO and text), plus Date.parse().
+3. Get methods: getFullYear, getMonth, getDate, getDay, getHours.
+4. Set methods: setFullYear, setMonth, setDate, setHours.
+5. Reference demo: toDateString, toISOString, getTime.
+
+Example:
+Click each button in Isdate.html to see output for each concept.

@@ -1,0 +1,62 @@
+:root {
+  --ink: #1f1f1f;
+  --bg: #f7fbff;
+  --card: #ffffff;
+  --border: #d8e4f0;
+  --accent: #0b5ea8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.hero {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 8vw 1.25rem;
+}
+
+.lede {
+  max-width: 75ch;
+}
+
+.content {
+  padding: 1.5rem 8vw 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+pre {
+  background: #eef5fc;
+  border-radius: 8px;
+  padding: 0.75rem;
+  overflow-x: auto;
+}
+
+.btn {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.output {
+  color: var(--accent);
+  font-weight: 600;
+}

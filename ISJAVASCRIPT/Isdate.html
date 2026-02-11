@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Date</title>
+    <link rel="stylesheet" href="Isdate.css" />
+    <script src="Isdate.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Date: Create, Format, Get, Set</h1>
+      <p class="lede">
+        Learn Date object basics with practical examples inspired by W3Schools Date lessons.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>Create Dates</h2>
+        <pre><code>
+const now = new Date();
+const fromString = new Date("2026-02-11");
+const fromParts = new Date(2026, 1, 11, 10, 30, 0);
+        </code></pre>
+        <button class="btn" id="create-btn" type="button">Run create</button>
+        <p class="output" id="create-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Date Formats</h2>
+        <pre><code>
+new Date("2026-02-11");
+new Date("Feb 11, 2026");
+Date.parse("2026-02-11");
+        </code></pre>
+        <button class="btn" id="format-btn" type="button">Run formats</button>
+        <p class="output" id="format-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Get Methods</h2>
+        <pre><code>
+const d = new Date();
+d.getFullYear();
+d.getMonth();
+d.getDate();
+d.getDay();
+        </code></pre>
+        <button class="btn" id="get-btn" type="button">Run get methods</button>
+        <p class="output" id="get-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Set Methods</h2>
+        <pre><code>
+const d = new Date();
+d.setFullYear(2030);
+d.setMonth(0);
+d.setDate(1);
+        </code></pre>
+        <button class="btn" id="set-btn" type="button">Run set methods</button>
+        <p class="output" id="set-output">Click the button.</p>
+      </section>
+
+      <section class="card">
+        <h2>Reference Quick Demo</h2>
+        <pre><code>
+const d = new Date();
+d.toDateString();
+d.toISOString();
+d.getTime();
+        </code></pre>
+        <button class="btn" id="ref-btn" type="button">Run reference</button>
+        <p class="output" id="ref-output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>
