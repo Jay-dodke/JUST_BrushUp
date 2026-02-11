@@ -1,0 +1,8 @@
+What:
+Method is a function in an object.
+
+Why:
+Keeps data and behavior together.
+
+Example:
+person.fullName() returns full name.

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Property</title>
+    <link rel="stylesheet" href="ObjectProperty.css" />
+    <script src="ObjectProperty.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Object Properties</h1>
+      <p>Properties are values saved inside an object.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Dot Notation</h2>
+        <pre><code>
+const phone = { brand: "Samsung", price: 18000 };
+console.log(phone.brand);
+        </code></pre>
+      </section>
+      <section class="card">
+        <h2>Bracket Notation</h2>
+        <pre><code>
+console.log(phone["price"]);
+        </code></pre>
+        <button id="run-btn" type="button">Run example</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

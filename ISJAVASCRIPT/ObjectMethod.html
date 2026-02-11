@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+    <link rel="stylesheet" href="ObjectMethod.css" />
+    <script src="ObjectMethod.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Object Methods</h1>
+      <p>Methods are functions stored as object properties.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Method Example</h2>
+        <pre><code>
+const person = {
+  firstName: "Neha",
+  lastName: "Sharma",
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+};
+        </code></pre>
+        <button id="run-btn" type="button">Run example</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

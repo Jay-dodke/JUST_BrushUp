@@ -1,0 +1,8 @@
+What:
+Object groups related values in one variable.
+
+Why:
+Cleaner data handling than many separate variables.
+
+Example:
+student object stores name, className, isPresent.

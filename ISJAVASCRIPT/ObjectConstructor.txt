@@ -1,0 +1,8 @@
+What:
+Constructor function builds object instances.
+
+Why:
+Avoid repeating same object structure.
+
+Example:
+new Student("Ravi", "A").

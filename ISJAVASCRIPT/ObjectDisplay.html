@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Display</title>
+    <link rel="stylesheet" href="ObjectDisplay.css" />
+    <script src="ObjectDisplay.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Object Display</h1>
+      <p>Objects can be displayed using values, loops, and JSON.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Display Styles</h2>
+        <pre><code>
+const book = { title: "Atomic Habits", author: "James Clear" };
+Object.values(book);
+JSON.stringify(book);
+        </code></pre>
+        <button id="run-btn" type="button">Run example</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>

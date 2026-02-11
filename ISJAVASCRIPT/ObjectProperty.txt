@@ -1,0 +1,8 @@
+What:
+Property = key with value inside object.
+
+Why:
+Access and update specific data quickly.
+
+Example:
+phone.brand and phone["price"].

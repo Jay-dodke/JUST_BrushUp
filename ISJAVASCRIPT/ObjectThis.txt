@@ -1,0 +1,8 @@
+What:
+`this` means current object context.
+
+Why:
+Use object values inside methods.
+
+Example:
+car.info() reads this.brand and this.model.

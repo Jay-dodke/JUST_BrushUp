@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Constructor</title>
+    <link rel="stylesheet" href="ObjectConstructor.css" />
+    <script src="ObjectConstructor.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>JavaScript Object Constructors</h1>
+      <p>Constructor functions create many similar objects.</p>
+    </header>
+    <main class="content">
+      <section class="card">
+        <h2>Constructor Example</h2>
+        <pre><code>
+function Student(name, grade) {
+  this.name = name;
+  this.grade = grade;
+}
+
+const s1 = new Student("Ravi", "A");
+        </code></pre>
+        <button id="run-btn" type="button">Run example</button>
+        <p id="output" class="output">Click the button.</p>
+      </section>
+    </main>
+  </body>
+</html>
