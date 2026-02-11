@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Complete Dashboard</title>
+    <link rel="stylesheet" href="complete.css" />
+    <script src="complete.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">ISJAVASCRIPT</p>
+        <h1>Complete JavaScript Lesson</h1>
+        <p class="subtitle">
+          One optimized, responsive dashboard to browse every lesson in this
+          folder.
+        </p>
+        <div class="stats" id="stats" aria-live="polite"></div>
+      </header>
+
+      <section class="toolbar" aria-label="Filter lessons">
+        <label class="search-wrap" for="search-input">
+          <span>Search topic</span>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Try: map, array, function..."
+            autocomplete="off" />
+        </label>
+        <div
+          id="group-filters"
+          class="chips"
+          role="tablist"
+          aria-label="Groups"></div>
+      </section>
+
+      <section>
+        <ul id="lesson-grid" class="grid" aria-live="polite"></ul>
+        <p id="empty-state" class="empty" hidden>
+          No results. Try another keyword or group.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
