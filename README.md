@@ -3,16 +3,17 @@
 Main page navigation for quick access to each track.
 
 ## Quick Links
-- [HTML Topics](ISHTML/)
-- [CSS Topics](ISCSS/)
-- [JavaScript Topics](ISJAVASCRIPT/)
+- [HTML Topics](#html)
+- [CSS Topics](#css)
+- [JavaScript Topics](#javascript)
 
 ## Tracks
 ### HTML
-Go to: [Open HTML Track](ISHTML/)
+Go to: [Open HTML Track](#html)
 
 ### CSS
-Go to: [Open CSS Track](ISCSS/)
+Go to: [Open CSS Track](#css)
 
 ### JavaScript
-Go to: [Open JavaScript Track](ISJAVASCRIPT/)
+Go to: [Open JavaScript Track](#javascript)
+
