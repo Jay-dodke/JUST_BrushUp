@@ -17,4 +17,4 @@ Go to: [Open CSS Track](#css)
 ### JavaScript
 Go to: [Open JavaScript Track](#javascript)
 
-Fixed Today , checkout the branch 
+Fixed soon checkout the branch 
