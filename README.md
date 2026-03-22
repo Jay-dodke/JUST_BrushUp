@@ -19,4 +19,4 @@ Go to: [Open JavaScript Track](#javascript)
 
 this repo is not updated i will fix it sometime 
 
-if any problem contenct me : jaykumardodke@gmail.com 
+ 
