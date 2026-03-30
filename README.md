@@ -17,6 +17,6 @@ Go to: [Open CSS Track](#css)
 ### JavaScript
 Go to: [Open JavaScript Track](#javascript)
 
-this repo is not updated i will fix it sometime  fix today
+this repo is not updated i will fix it sometime 
 
  
