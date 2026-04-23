@@ -17,6 +17,6 @@ Go to: [Open CSS Track](#css)
 ### JavaScript
 Go to: [Open JavaScript Track](#javascript)
 
-Update soon
+Updated and the leetcode question and ans are give you soon
 
  
