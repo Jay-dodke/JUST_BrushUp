@@ -17,6 +17,7 @@ Go to: [Open CSS Track](#css)
 ### JavaScript
 Go to: [Open JavaScript Track](#javascript)
 
-Updated and the leetcode question and ans are give you soon
+
+I give my best the path are updated soon
 
  
