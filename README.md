@@ -18,6 +18,6 @@ Go to: [Open CSS Track](#css)
 Go to: [Open JavaScript Track](#javascript)
 
 
-I give my best the path are updated soon
+Update soon
 
  
