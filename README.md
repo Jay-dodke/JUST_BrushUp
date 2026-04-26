@@ -18,6 +18,6 @@ Go to: [Open CSS Track](#css)
 Go to: [Open JavaScript Track](#javascript)
 
 
-updated soon
+Update soon
 
  
