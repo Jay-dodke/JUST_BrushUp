@@ -17,6 +17,5 @@ Go to: [Open CSS Track](#css)
 ### JavaScript
 Go to: [Open JavaScript Track](#javascript)
 
-what i do i dont know
-
+updateded soon
  
