@@ -17,5 +17,4 @@ Go to: [Open CSS Track](#css)
 ### JavaScript
 Go to: [Open JavaScript Track](#javascript)
 
-ohh updated soon
- 
+SOON UPDATE PATH
